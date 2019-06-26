@@ -1,0 +1,1496 @@
+[
+  {
+    "_id": "5c5d46961e166344e8b6d16c",
+    "codice": "qui",
+    "materiale": "Lilian",
+    "tipo": 0,
+    "x": 10561,
+    "y": 3580,
+    "z": 4690,
+    "posizione": "amet",
+    "colata": 926470,
+    "fornitore": "Zaggles",
+    "descrizione": "Laborum elit nisi cillum do id laborum consequat pariatur ex. Ex aliquip anim laboris Lorem ut velit. Aliquip laboris elit fugiat magna anim sint exercitation.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8004,
+      "data": "2008-12-23T14:24:20.095Z"
+    }
+  },
+  {
+    "_id": "5c5d469697b774d76e3b731d",
+    "codice": "irure",
+    "materiale": "Spencer",
+    "tipo": 1,
+    "x": 3602,
+    "y": 2184,
+    "z": 7744,
+    "posizione": "irure",
+    "colata": 575318,
+    "fornitore": "Sultraxin",
+    "descrizione": "Tempor enim eiusmod ex nisi nostrud occaecat non culpa. Labore eiusmod et fugiat in cupidatat duis proident deserunt consequat. Nostrud amet anim cupidatat elit commodo eu pariatur velit cillum incididunt. Dolor commodo mollit qui occaecat proident enim sunt nostrud est aliqua ipsum sint. Labore aliquip nulla veniam laboris labore non incididunt do sit est ullamco ipsum sunt qui.",
+    "deleted": false,
+    "ddt": {
+      "numero": 410,
+      "data": "2004-04-09T08:32:31.812Z"
+    }
+  },
+  {
+    "_id": "5c5d46960b92dde210d3ce09",
+    "codice": "qui",
+    "materiale": "Bauer",
+    "tipo": 0,
+    "x": 1560,
+    "y": 6008,
+    "z": 5704,
+    "posizione": "sit",
+    "colata": 975273,
+    "fornitore": "Zolarity",
+    "descrizione": "Aliqua labore ex ad voluptate velit aute adipisicing qui sit aliqua laboris eiusmod consectetur anim. Veniam adipisicing consectetur laborum aliquip. Laboris sint magna et Lorem cillum. Sunt quis Lorem mollit fugiat sint incididunt esse. Aliquip magna laborum sit cupidatat.",
+    "deleted": false,
+    "ddt": {
+      "numero": 978,
+      "data": "2010-11-30T19:57:09.150Z"
+    }
+  },
+  {
+    "_id": "5c5d4696eab078a577a4a73d",
+    "codice": "veniam",
+    "materiale": "Lopez",
+    "tipo": 1,
+    "x": 7847,
+    "y": 10422,
+    "z": 4772,
+    "posizione": "proident",
+    "colata": 264231,
+    "fornitore": "Balooba",
+    "descrizione": "Proident ex aliquip exercitation commodo. Ullamco excepteur veniam sit dolor ad qui voluptate esse sint nisi. Dolore proident mollit sit adipisicing laboris dolor non mollit cillum aliqua pariatur. Amet occaecat quis incididunt ea voluptate anim. Cillum id consectetur deserunt tempor commodo laboris voluptate deserunt ad minim duis et amet cillum. Laboris nulla ad duis elit aliqua ipsum do deserunt sint proident nisi.",
+    "deleted": true,
+    "ddt": {
+      "numero": 2800,
+      "data": "2012-05-08T00:48:59.903Z"
+    }
+  },
+  {
+    "_id": "5c5d46963e5e31a87883d04b",
+    "codice": "nulla",
+    "materiale": "Lowe",
+    "tipo": 2,
+    "x": 8441,
+    "y": 397,
+    "z": 10800,
+    "posizione": "laborum",
+    "colata": 36654,
+    "fornitore": "Equitox",
+    "descrizione": "Velit duis ut cupidatat reprehenderit excepteur nostrud eu dolore nostrud. Tempor ad commodo sunt aliquip et proident cillum eiusmod. Duis proident qui occaecat nisi veniam sit dolore. Mollit officia nisi aliquip laborum anim officia occaecat quis ipsum. Exercitation aliqua ex deserunt consectetur mollit quis reprehenderit Lorem adipisicing. Consectetur adipisicing adipisicing in commodo enim proident culpa pariatur et. Voluptate aute deserunt tempor ullamco ad ad adipisicing aliquip sit aute qui tempor eiusmod.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3817,
+      "data": "2015-04-28T20:47:12.824Z"
+    }
+  },
+  {
+    "_id": "5c5d4696f44f5ab0b72aff1a",
+    "codice": "magna",
+    "materiale": "Janine",
+    "tipo": 0,
+    "x": 2072,
+    "y": 8907,
+    "z": 1522,
+    "posizione": "laborum",
+    "colata": 968033,
+    "fornitore": "Opticom",
+    "descrizione": "Anim proident ex minim id. Fugiat id cupidatat irure quis fugiat. Duis eiusmod non excepteur consequat incididunt nostrud fugiat consectetur sit Lorem ut labore voluptate laborum.",
+    "deleted": false,
+    "ddt": {
+      "numero": 7582,
+      "data": "2002-04-02T00:28:16.884Z"
+    }
+  },
+  {
+    "_id": "5c5d4696c1e0b62a5208a343",
+    "codice": "sint",
+    "materiale": "Strong",
+    "tipo": 1,
+    "x": 11177,
+    "y": 5215,
+    "z": 5198,
+    "posizione": "minim",
+    "colata": 170610,
+    "fornitore": "Satiance",
+    "descrizione": "Eu occaecat dolor aliqua id fugiat nostrud. Nulla velit quis veniam non incididunt Lorem laboris eu non enim exercitation. Dolore pariatur sit fugiat aliqua ea aliqua. Labore cillum deserunt ullamco laborum eiusmod pariatur eu irure culpa nisi exercitation proident.",
+    "deleted": false,
+    "ddt": {
+      "numero": 1499,
+      "data": "2012-04-22T22:03:41.136Z"
+    }
+  },
+  {
+    "_id": "5c5d46962765db6cc4df6d93",
+    "codice": "nulla",
+    "materiale": "Winters",
+    "tipo": 0,
+    "x": 3606,
+    "y": 5534,
+    "z": 5223,
+    "posizione": "consectetur",
+    "colata": 167159,
+    "fornitore": "Eclipsent",
+    "descrizione": "Minim dolore est voluptate nulla consectetur. Irure consequat aliquip quis sit ea exercitation nostrud eiusmod culpa non laborum fugiat id. Ex irure est eu fugiat eu qui aute. Minim nulla qui dolore non elit proident deserunt pariatur pariatur elit. Proident pariatur pariatur ad ad velit consequat commodo in. Velit nisi occaecat pariatur reprehenderit quis.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3851,
+      "data": "2017-03-23T17:31:11.216Z"
+    }
+  },
+  {
+    "_id": "5c5d4696bd0452e7159b85ba",
+    "codice": "id",
+    "materiale": "Cameron",
+    "tipo": 2,
+    "x": 2953,
+    "y": 2927,
+    "z": 5738,
+    "posizione": "enim",
+    "colata": 452710,
+    "fornitore": "Fishland",
+    "descrizione": "Occaecat incididunt occaecat laboris et mollit cupidatat fugiat ad. Est qui excepteur ex officia do dolor exercitation eu do sunt officia consequat exercitation. Officia minim qui eu mollit incididunt magna voluptate Lorem anim commodo labore proident. Magna dolore ea nisi incididunt deserunt dolore culpa occaecat pariatur laboris.",
+    "deleted": true,
+    "ddt": {
+      "numero": 7054,
+      "data": "2007-11-06T12:46:45.394Z"
+    }
+  },
+  {
+    "_id": "5c5d4696c555ac365828580f",
+    "codice": "cupidatat",
+    "materiale": "Decker",
+    "tipo": 1,
+    "x": 9957,
+    "y": 9727,
+    "z": 6934,
+    "posizione": "irure",
+    "colata": 43788,
+    "fornitore": "Obones",
+    "descrizione": "In Lorem deserunt id aute reprehenderit enim proident proident cillum enim ipsum. Ad laborum laborum dolore laboris ipsum laboris. Id culpa labore pariatur commodo sit velit dolore labore culpa. Magna irure fugiat veniam excepteur tempor nulla.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8131,
+      "data": "2015-03-07T21:33:46.787Z"
+    }
+  },
+  {
+    "_id": "5c5d469648d836f64b240c54",
+    "codice": "sunt",
+    "materiale": "Holman",
+    "tipo": 0,
+    "x": 8730,
+    "y": 11576,
+    "z": 9477,
+    "posizione": "elit",
+    "colata": 421403,
+    "fornitore": "Gynko",
+    "descrizione": "Culpa labore excepteur aute tempor eu ut incididunt commodo. Qui nulla veniam id ipsum deserunt tempor non anim anim id ipsum do veniam. Nisi voluptate eu sit sunt mollit do.",
+    "deleted": false,
+    "ddt": {
+      "numero": 2924,
+      "data": "2001-02-28T13:35:01.043Z"
+    }
+  },
+  {
+    "_id": "5c5d4696ad7ea08fe231df13",
+    "codice": "cillum",
+    "materiale": "Elisa",
+    "tipo": 0,
+    "x": 2615,
+    "y": 6459,
+    "z": 1137,
+    "posizione": "et",
+    "colata": 472739,
+    "fornitore": "Memora",
+    "descrizione": "Ea non eu duis laborum cillum mollit Lorem aliquip aliquip Lorem. Deserunt et cupidatat laborum labore nisi. Exercitation deserunt laborum qui anim anim laborum ad.",
+    "deleted": false,
+    "ddt": {
+      "numero": 954,
+      "data": "2006-09-11T14:29:36.410Z"
+    }
+  },
+  {
+    "_id": "5c5d4696c0f099630deb3382",
+    "codice": "cupidatat",
+    "materiale": "Phoebe",
+    "tipo": 2,
+    "x": 11563,
+    "y": 8243,
+    "z": 1693,
+    "posizione": "est",
+    "colata": 820789,
+    "fornitore": "Keeg",
+    "descrizione": "Elit magna consequat commodo ipsum aliqua cupidatat veniam ad mollit est culpa incididunt amet. Fugiat enim officia ut cillum minim magna Lorem aute occaecat do. Occaecat ex officia sit et ut dolore cupidatat labore ad aliqua veniam laborum culpa in. Aliqua enim occaecat et officia aute qui tempor. Fugiat Lorem culpa aliquip excepteur est mollit sit amet tempor eiusmod. Voluptate minim ad est sit sint velit.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8836,
+      "data": "2003-12-14T03:56:05.270Z"
+    }
+  },
+  {
+    "_id": "5c5d4696551550b8c9d2fbb9",
+    "codice": "reprehenderit",
+    "materiale": "Campos",
+    "tipo": 1,
+    "x": 7487,
+    "y": 9961,
+    "z": 3598,
+    "posizione": "est",
+    "colata": 376601,
+    "fornitore": "Zaphire",
+    "descrizione": "Nostrud nisi duis adipisicing occaecat minim cillum officia. Enim deserunt velit elit adipisicing ut nostrud tempor nostrud consectetur officia aliquip quis et. Do dolor excepteur minim consectetur incididunt. Sint ad sunt magna sit id ipsum.",
+    "deleted": true,
+    "ddt": {
+      "numero": 138,
+      "data": "2015-03-31T15:56:33.644Z"
+    }
+  },
+  {
+    "_id": "5c5d46966a879fd7e8afd392",
+    "codice": "ut",
+    "materiale": "Jeanine",
+    "tipo": 0,
+    "x": 2059,
+    "y": 4568,
+    "z": 7298,
+    "posizione": "nostrud",
+    "colata": 776319,
+    "fornitore": "Orbixtar",
+    "descrizione": "Labore et ut dolor enim occaecat pariatur anim nostrud ullamco id nisi. Incididunt aute amet nostrud aliqua laborum magna laborum proident esse velit dolore nulla. Ad quis tempor qui cupidatat dolor eu incididunt veniam in. Amet aliquip proident nostrud ut dolore dolore aliquip voluptate sit sint proident. Proident amet deserunt nulla excepteur Lorem nisi exercitation.",
+    "deleted": true,
+    "ddt": {
+      "numero": 7027,
+      "data": "2008-04-03T09:11:40.781Z"
+    }
+  },
+  {
+    "_id": "5c5d4696c3c414b28c264955",
+    "codice": "veniam",
+    "materiale": "Eileen",
+    "tipo": 0,
+    "x": 6831,
+    "y": 8953,
+    "z": 4041,
+    "posizione": "cillum",
+    "colata": 501041,
+    "fornitore": "Centree",
+    "descrizione": "Consectetur ad consequat est culpa. Ea commodo in velit incididunt excepteur do. Est aliqua excepteur dolor consequat aute nulla in. Veniam aliquip enim enim sit. Nulla Lorem officia dolore fugiat qui eiusmod tempor sit minim velit elit. Magna laboris sunt laboris aliqua. Ea laborum eu incididunt qui do anim duis irure minim in sit.",
+    "deleted": true,
+    "ddt": {
+      "numero": 2245,
+      "data": "2014-12-13T03:30:01.780Z"
+    }
+  },
+  {
+    "_id": "5c5d469648ef76ed53bce069",
+    "codice": "irure",
+    "materiale": "Mathews",
+    "tipo": 1,
+    "x": 9437,
+    "y": 9527,
+    "z": 4923,
+    "posizione": "proident",
+    "colata": 846761,
+    "fornitore": "Mangelica",
+    "descrizione": "Pariatur exercitation elit aute do elit. Duis enim veniam irure eiusmod. Eu ex aute ad occaecat minim consectetur adipisicing ullamco adipisicing excepteur duis nostrud.",
+    "deleted": true,
+    "ddt": {
+      "numero": 9134,
+      "data": "2009-01-17T06:41:00.462Z"
+    }
+  },
+  {
+    "_id": "5c5d46967de48265db8032d7",
+    "codice": "nostrud",
+    "materiale": "Trina",
+    "tipo": 0,
+    "x": 5754,
+    "y": 9560,
+    "z": 10308,
+    "posizione": "laborum",
+    "colata": 919867,
+    "fornitore": "Avit",
+    "descrizione": "Aliquip Lorem aute aliqua excepteur reprehenderit nulla elit magna nisi ut officia ea. Ad aute nisi nisi nulla dolore tempor irure. Ipsum ut enim irure aute mollit id mollit ad id mollit reprehenderit ullamco ex cupidatat. Adipisicing fugiat exercitation veniam amet voluptate est id excepteur aliqua velit. Aliquip quis minim est ex aute fugiat. Dolor tempor est reprehenderit id sint nulla do ea mollit minim sint aliquip duis aliquip. Laboris cillum ex voluptate proident deserunt dolore cillum est.",
+    "deleted": true,
+    "ddt": {
+      "numero": 706,
+      "data": "2003-08-27T17:35:21.806Z"
+    }
+  },
+  {
+    "_id": "5c5d46966e93b3db710bf4b0",
+    "codice": "deserunt",
+    "materiale": "Hays",
+    "tipo": 2,
+    "x": 801,
+    "y": 10416,
+    "z": 3875,
+    "posizione": "exercitation",
+    "colata": 534895,
+    "fornitore": "Inrt",
+    "descrizione": "Tempor non anim amet magna pariatur reprehenderit mollit deserunt sint qui ad adipisicing consequat. Cillum ea tempor adipisicing consequat sunt laboris magna. Veniam duis id velit sit non in cupidatat. Ipsum ipsum occaecat amet aliqua nisi cupidatat id dolor sit veniam.",
+    "deleted": true,
+    "ddt": {
+      "numero": 8708,
+      "data": "2014-07-04T09:52:52.601Z"
+    }
+  },
+  {
+    "_id": "5c5d4696ebd940d5a85d7a7a",
+    "codice": "sit",
+    "materiale": "Lori",
+    "tipo": 0,
+    "x": 1119,
+    "y": 6331,
+    "z": 2889,
+    "posizione": "ea",
+    "colata": 125744,
+    "fornitore": "Colaire",
+    "descrizione": "Ea excepteur voluptate culpa reprehenderit ipsum aliqua est. Minim duis ad nostrud excepteur qui ipsum ex sunt deserunt officia anim labore. Incididunt consequat deserunt cillum incididunt incididunt nulla irure enim proident culpa irure amet. Incididunt qui nulla qui anim voluptate eu adipisicing labore est eiusmod eu amet. Culpa tempor cillum adipisicing pariatur consequat aute culpa cillum. Consequat irure irure consequat sunt id Lorem ullamco nulla.",
+    "deleted": true,
+    "ddt": {
+      "numero": 5269,
+      "data": "2002-02-12T05:07:11.840Z"
+    }
+  },
+  {
+    "_id": "5c5d4696bbd7e7a547969099",
+    "codice": "aute",
+    "materiale": "Margarita",
+    "tipo": 1,
+    "x": 5850,
+    "y": 11265,
+    "z": 6804,
+    "posizione": "ex",
+    "colata": 397821,
+    "fornitore": "Flotonic",
+    "descrizione": "Voluptate nisi elit quis exercitation fugiat ullamco nulla labore proident. Incididunt nostrud aliquip id nostrud officia dolor consectetur quis proident. Nostrud exercitation commodo quis excepteur laboris pariatur quis reprehenderit voluptate non elit. In commodo nostrud deserunt ex id sint ad quis nisi. Magna amet do reprehenderit anim est in reprehenderit aliqua ullamco officia laborum Lorem. Adipisicing ea pariatur cupidatat duis adipisicing nostrud Lorem commodo labore aute quis eiusmod.",
+    "deleted": true,
+    "ddt": {
+      "numero": 875,
+      "data": "2010-08-01T11:39:49.913Z"
+    }
+  },
+  {
+    "_id": "5c5d469672400118686b695c",
+    "codice": "irure",
+    "materiale": "Johnston",
+    "tipo": 2,
+    "x": 2211,
+    "y": 3869,
+    "z": 4841,
+    "posizione": "sint",
+    "colata": 457887,
+    "fornitore": "Suretech",
+    "descrizione": "Voluptate pariatur voluptate velit non ut. Culpa reprehenderit incididunt ipsum elit dolore amet veniam duis laborum. Reprehenderit consectetur aute ut minim deserunt consequat labore voluptate quis labore. Proident do ad mollit non laboris cupidatat sint tempor. Eu excepteur nostrud dolor excepteur dolor cillum ea consequat consectetur proident. Cillum eu culpa excepteur officia veniam aliquip Lorem anim. Fugiat mollit exercitation laboris tempor voluptate veniam proident commodo aliquip duis.",
+    "deleted": true,
+    "ddt": {
+      "numero": 1048,
+      "data": "2014-01-24T15:28:56.695Z"
+    }
+  },
+  {
+    "_id": "5c5d4696bfb205bd92a6a7d1",
+    "codice": "id",
+    "materiale": "Shannon",
+    "tipo": 1,
+    "x": 5752,
+    "y": 7651,
+    "z": 10160,
+    "posizione": "in",
+    "colata": 735036,
+    "fornitore": "Bedlam",
+    "descrizione": "Laborum id aliqua mollit deserunt ad est nisi amet nulla. Commodo aute aliqua reprehenderit sunt non elit nisi cupidatat. Adipisicing incididunt magna do eu eu et ad cupidatat reprehenderit qui. Sint irure mollit fugiat ad est consequat velit Lorem. Ex eiusmod fugiat mollit elit enim aliquip. Velit sit consectetur quis ad id sunt magna.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3320,
+      "data": "2000-08-11T12:09:19.528Z"
+    }
+  },
+  {
+    "_id": "5c5d469681ecef86299bf87e",
+    "codice": "veniam",
+    "materiale": "Shelly",
+    "tipo": 1,
+    "x": 11047,
+    "y": 6568,
+    "z": 3934,
+    "posizione": "aute",
+    "colata": 984762,
+    "fornitore": "Earwax",
+    "descrizione": "Proident in labore labore laborum culpa id tempor dolore ullamco qui non. Incididunt et commodo exercitation dolor aute excepteur. Consectetur adipisicing aliquip enim elit consectetur enim pariatur excepteur cupidatat reprehenderit ullamco est. Deserunt consequat fugiat tempor non mollit Lorem duis do qui ea exercitation.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3093,
+      "data": "2012-04-10T12:09:43.466Z"
+    }
+  },
+  {
+    "_id": "5c5d469643179459779e3499",
+    "codice": "exercitation",
+    "materiale": "Angelique",
+    "tipo": 0,
+    "x": 2087,
+    "y": 4227,
+    "z": 8310,
+    "posizione": "aute",
+    "colata": 429385,
+    "fornitore": "Maineland",
+    "descrizione": "Culpa aliquip duis proident veniam proident labore pariatur minim est. Eiusmod magna amet pariatur magna mollit eu esse eiusmod proident. Eu est ut incididunt ullamco tempor nostrud quis ut eiusmod anim nisi. Ad culpa magna excepteur amet occaecat.",
+    "deleted": true,
+    "ddt": {
+      "numero": 4990,
+      "data": "2018-01-30T10:18:07.081Z"
+    }
+  },
+  {
+    "_id": "5c5d469623f8552a5a7b60a9",
+    "codice": "deserunt",
+    "materiale": "Brandy",
+    "tipo": 0,
+    "x": 11816,
+    "y": 2134,
+    "z": 1064,
+    "posizione": "cillum",
+    "colata": 462975,
+    "fornitore": "Candecor",
+    "descrizione": "Mollit adipisicing incididunt mollit velit aliqua aliqua sint excepteur. Qui sit do id cillum ex laboris culpa pariatur. Reprehenderit anim laboris cillum dolore Lorem nulla ut amet non tempor aute mollit deserunt ex. Aute cillum ut sunt officia velit esse sint enim consequat reprehenderit enim irure adipisicing.",
+    "deleted": false,
+    "ddt": {
+      "numero": 2089,
+      "data": "2018-01-15T18:34:13.882Z"
+    }
+  },
+  {
+    "_id": "5c5d46966a2d1c4cfffead39",
+    "codice": "excepteur",
+    "materiale": "Clay",
+    "tipo": 2,
+    "x": 6860,
+    "y": 7825,
+    "z": 10519,
+    "posizione": "veniam",
+    "colata": 35920,
+    "fornitore": "Sportan",
+    "descrizione": "Ea qui laboris culpa culpa commodo reprehenderit est reprehenderit duis pariatur ex reprehenderit consequat voluptate. Mollit nulla nostrud aute laboris culpa labore officia laboris fugiat nostrud veniam cupidatat. Aliquip sint cillum veniam eiusmod dolor ad.",
+    "deleted": false,
+    "ddt": {
+      "numero": 1909,
+      "data": "2013-10-24T20:47:59.929Z"
+    }
+  },
+  {
+    "_id": "5c5d469644d9ace2df3c1517",
+    "codice": "cupidatat",
+    "materiale": "Lindsey",
+    "tipo": 1,
+    "x": 8363,
+    "y": 1352,
+    "z": 7239,
+    "posizione": "reprehenderit",
+    "colata": 906094,
+    "fornitore": "Medcom",
+    "descrizione": "Do laboris ea occaecat occaecat cillum ex consequat et non aute cupidatat veniam. Minim adipisicing labore fugiat fugiat quis non officia culpa proident sit cupidatat proident eu. Elit cupidatat dolore ad dolor ad.",
+    "deleted": false,
+    "ddt": {
+      "numero": 9072,
+      "data": "2018-05-11T09:00:58.914Z"
+    }
+  },
+  {
+    "_id": "5c5d4696da234844db47be01",
+    "codice": "irure",
+    "materiale": "Jeanne",
+    "tipo": 1,
+    "x": 9034,
+    "y": 5300,
+    "z": 1427,
+    "posizione": "cupidatat",
+    "colata": 847352,
+    "fornitore": "Digique",
+    "descrizione": "Culpa cupidatat id nisi proident pariatur officia et irure non non esse. Quis elit ad ullamco sunt exercitation laborum fugiat. Voluptate dolor sit quis commodo sunt aliqua incididunt esse. Incididunt ex veniam fugiat exercitation cillum veniam non elit do cupidatat exercitation dolore.",
+    "deleted": true,
+    "ddt": {
+      "numero": 641,
+      "data": "2000-06-25T23:02:17.629Z"
+    }
+  },
+  {
+    "_id": "5c5d469690312e71069669bb",
+    "codice": "do",
+    "materiale": "Hartman",
+    "tipo": 1,
+    "x": 4140,
+    "y": 11563,
+    "z": 8693,
+    "posizione": "magna",
+    "colata": 682286,
+    "fornitore": "Minga",
+    "descrizione": "Esse aliquip minim adipisicing in. Tempor aute eiusmod ea cillum ad. Lorem proident fugiat elit in non minim voluptate. Fugiat nisi dolore in eiusmod consectetur aute anim proident. Quis aliquip Lorem do ex et reprehenderit elit. Labore aute esse anim enim excepteur velit ullamco laboris et anim. Dolor ipsum exercitation excepteur Lorem magna ea incididunt exercitation est proident aliquip et deserunt.",
+    "deleted": false,
+    "ddt": {
+      "numero": 9233,
+      "data": "2008-07-31T10:47:56.517Z"
+    }
+  },
+  {
+    "_id": "5c5d46969623273e15dfba84",
+    "codice": "nisi",
+    "materiale": "Bray",
+    "tipo": 2,
+    "x": 9311,
+    "y": 5141,
+    "z": 6286,
+    "posizione": "eu",
+    "colata": 67326,
+    "fornitore": "Cosmetex",
+    "descrizione": "Cupidatat quis velit incididunt ut tempor minim nulla fugiat proident do ad incididunt occaecat. Nulla dolore voluptate cupidatat commodo irure. Cupidatat anim eu occaecat aute deserunt voluptate aliquip velit. Esse enim commodo do Lorem. Occaecat ut do voluptate et dolor magna.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3013,
+      "data": "2010-05-19T18:38:39.557Z"
+    }
+  },
+  {
+    "_id": "5c5d4696e46b76019a2d8227",
+    "codice": "excepteur",
+    "materiale": "Lucas",
+    "tipo": 2,
+    "x": 5185,
+    "y": 4210,
+    "z": 2184,
+    "posizione": "in",
+    "colata": 719656,
+    "fornitore": "Ronelon",
+    "descrizione": "Elit minim do ex labore eiusmod labore. Ut sunt culpa adipisicing nostrud irure sint veniam magna aute exercitation nulla eu. Reprehenderit aute officia commodo esse irure. Adipisicing ipsum cupidatat nulla dolor mollit velit dolor ex nisi cillum eiusmod ut. Deserunt pariatur consectetur proident cupidatat elit laboris occaecat excepteur adipisicing adipisicing sunt et. Culpa ullamco officia pariatur dolor consequat. Irure deserunt consequat commodo amet veniam dolor sint id non.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3550,
+      "data": "2002-06-11T08:43:07.736Z"
+    }
+  },
+  {
+    "_id": "5c5d46965251536a6d26087e",
+    "codice": "fugiat",
+    "materiale": "Noelle",
+    "tipo": 2,
+    "x": 2050,
+    "y": 8466,
+    "z": 2644,
+    "posizione": "consequat",
+    "colata": 509981,
+    "fornitore": "Cowtown",
+    "descrizione": "Deserunt eu elit consequat Lorem proident aliqua reprehenderit deserunt. Labore quis aute laboris non tempor. Qui aute irure anim do in tempor dolore fugiat mollit pariatur veniam cillum adipisicing sunt. Eiusmod Lorem deserunt laborum exercitation proident tempor aliquip cillum dolore nisi elit.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3057,
+      "data": "2018-07-02T07:07:04.069Z"
+    }
+  },
+  {
+    "_id": "5c5d469686f78be7bd8b3274",
+    "codice": "dolore",
+    "materiale": "Lupe",
+    "tipo": 0,
+    "x": 6200,
+    "y": 5306,
+    "z": 11846,
+    "posizione": "consectetur",
+    "colata": 615249,
+    "fornitore": "Lunchpad",
+    "descrizione": "Aute duis incididunt incididunt excepteur ut esse nisi deserunt in ex. Voluptate enim Lorem officia mollit magna veniam aliquip. Fugiat sunt eu dolor cillum amet aute dolore amet laborum exercitation ea qui proident non. Pariatur elit eu mollit mollit in cillum elit ipsum cupidatat occaecat. Aliquip do do proident non magna eu veniam culpa exercitation voluptate magna laboris ea quis.",
+    "deleted": true,
+    "ddt": {
+      "numero": 371,
+      "data": "2015-09-30T07:02:13.940Z"
+    }
+  },
+  {
+    "_id": "5c5d469674d70101e047c1c9",
+    "codice": "nostrud",
+    "materiale": "Edna",
+    "tipo": 0,
+    "x": 1836,
+    "y": 3231,
+    "z": 2888,
+    "posizione": "ut",
+    "colata": 343061,
+    "fornitore": "Zorromop",
+    "descrizione": "Sunt anim aute cupidatat consectetur. Magna deserunt officia proident aliquip laboris nisi amet amet laborum tempor elit Lorem. Sunt ex magna nulla in.",
+    "deleted": false,
+    "ddt": {
+      "numero": 3807,
+      "data": "2012-04-25T22:22:45.277Z"
+    }
+  },
+  {
+    "_id": "5c5d469617c05056c50f0cd1",
+    "codice": "excepteur",
+    "materiale": "Avis",
+    "tipo": 2,
+    "x": 6780,
+    "y": 5130,
+    "z": 3244,
+    "posizione": "sint",
+    "colata": 242904,
+    "fornitore": "Splinx",
+    "descrizione": "Nulla fugiat velit et adipisicing voluptate amet laborum. Irure minim do cillum ex tempor esse sunt. Dolore id exercitation esse voluptate est laborum Lorem pariatur cillum occaecat aliquip.",
+    "deleted": false,
+    "ddt": {
+      "numero": 5363,
+      "data": "2012-05-02T08:33:38.613Z"
+    }
+  },
+  {
+    "_id": "5c5d4696cdb3a7c694df0d1d",
+    "codice": "commodo",
+    "materiale": "Barr",
+    "tipo": 1,
+    "x": 2247,
+    "y": 8009,
+    "z": 1712,
+    "posizione": "magna",
+    "colata": 246,
+    "fornitore": "Quadeebo",
+    "descrizione": "Excepteur veniam adipisicing fugiat aute non eu amet amet aute dolore consequat. Nostrud culpa aliqua aute ut aute ullamco voluptate qui elit adipisicing amet ipsum laborum. Voluptate esse tempor enim laboris ad.",
+    "deleted": false,
+    "ddt": {
+      "numero": 6044,
+      "data": "2006-08-08T01:22:18.811Z"
+    }
+  },
+  {
+    "_id": "5c5d4696eee0f36f521fe1dd",
+    "codice": "occaecat",
+    "materiale": "Hodges",
+    "tipo": 1,
+    "x": 3927,
+    "y": 11760,
+    "z": 6117,
+    "posizione": "ut",
+    "colata": 294568,
+    "fornitore": "Uni",
+    "descrizione": "Lorem enim nulla ipsum officia consectetur do reprehenderit cillum cillum ex Lorem. Eu esse irure in eiusmod occaecat. Nostrud sint pariatur excepteur ullamco ut nulla sunt tempor sint magna cillum. Ut deserunt enim quis non exercitation culpa anim ad aliquip ea laborum. Do enim sit dolore quis amet consequat ut esse ad deserunt qui.",
+    "deleted": false,
+    "ddt": {
+      "numero": 4042,
+      "data": "2002-08-30T02:59:16.214Z"
+    }
+  },
+  {
+    "_id": "5c5d4696d3d8b8a2f8ddd942",
+    "codice": "ex",
+    "materiale": "Cheryl",
+    "tipo": 2,
+    "x": 9211,
+    "y": 2091,
+    "z": 5591,
+    "posizione": "aute",
+    "colata": 743811,
+    "fornitore": "Songlines",
+    "descrizione": "Cupidatat duis eiusmod elit esse Lorem ex. Velit aute esse sunt eiusmod laboris et magna nulla. Culpa cupidatat aliquip nostrud adipisicing do aliquip ea amet. Consequat eiusmod esse esse exercitation ut.",
+    "deleted": false,
+    "ddt": {
+      "numero": 7312,
+      "data": "2016-06-30T06:58:14.372Z"
+    }
+  },
+  {
+    "_id": "5c5d4696d76171eebec2984e",
+    "codice": "quis",
+    "materiale": "Kelly",
+    "tipo": 1,
+    "x": 8571,
+    "y": 7272,
+    "z": 8791,
+    "posizione": "cupidatat",
+    "colata": 477006,
+    "fornitore": "Emtrak",
+    "descrizione": "Magna cillum id velit consectetur proident adipisicing et est sint nisi amet aliqua. Proident velit amet quis est amet consequat duis ut. Cillum Lorem exercitation minim do. Commodo cillum exercitation commodo id tempor aute aliquip culpa ullamco adipisicing nostrud. Sit non ut aute Lorem mollit Lorem.",
+    "deleted": true,
+    "ddt": {
+      "numero": 6766,
+      "data": "2004-08-24T13:20:15.996Z"
+    }
+  },
+  {
+    "_id": "5c5d4696f46d2fc851a923ee",
+    "codice": "nostrud",
+    "materiale": "Wallace",
+    "tipo": 0,
+    "x": 5180,
+    "y": 4307,
+    "z": 6557,
+    "posizione": "ex",
+    "colata": 900880,
+    "fornitore": "Artworlds",
+    "descrizione": "Eu aute enim quis esse officia enim aute cupidatat esse fugiat quis tempor eu laborum. Ut commodo irure nulla magna voluptate. Nostrud cillum mollit commodo cillum mollit ad enim. Incididunt sit mollit labore duis consequat nulla veniam non ea. Velit amet labore excepteur do aliquip occaecat Lorem veniam mollit. Irure qui pariatur proident esse duis culpa consectetur consectetur irure consequat occaecat est ipsum elit. Excepteur ea minim magna sunt deserunt mollit cupidatat Lorem culpa reprehenderit labore duis.",
+    "deleted": true,
+    "ddt": {
+      "numero": 9674,
+      "data": "2017-01-28T03:54:27.694Z"
+    }
+  },
+  {
+    "_id": "5c5d46968f3102b38a545acb",
+    "codice": "culpa",
+    "materiale": "Dolly",
+    "tipo": 2,
+    "x": 6602,
+    "y": 428,
+    "z": 5199,
+    "posizione": "adipisicing",
+    "colata": 469957,
+    "fornitore": "Earthplex",
+    "descrizione": "Tempor qui ut do exercitation. Ut sunt sit esse ea eiusmod eu ut laborum sunt enim irure aute adipisicing reprehenderit. Officia aliquip non nostrud id ex ullamco aliqua consectetur laboris.",
+    "deleted": false,
+    "ddt": {
+      "numero": 574,
+      "data": "2008-05-10T01:07:14.766Z"
+    }
+  },
+  {
+    "_id": "5c5d4696ffd61b44398e468a",
+    "codice": "cupidatat",
+    "materiale": "Matilda",
+    "tipo": 0,
+    "x": 9989,
+    "y": 11140,
+    "z": 9054,
+    "posizione": "sit",
+    "colata": 949571,
+    "fornitore": "Dreamia",
+    "descrizione": "Ex in minim amet ut. Quis amet fugiat consectetur Lorem nostrud nisi aute aliquip nulla ut. Elit quis non incididunt ad aute labore ad occaecat quis et anim. Ex velit dolor consectetur cillum cupidatat nostrud incididunt. Excepteur non ad consequat eiusmod officia aliquip labore minim id velit non.",
+    "deleted": true,
+    "ddt": {
+      "numero": 813,
+      "data": "2000-10-10T22:19:22.651Z"
+    }
+  },
+  {
+    "_id": "5c5d469659a49e94ec5fcb8f",
+    "codice": "ea",
+    "materiale": "Sheree",
+    "tipo": 0,
+    "x": 579,
+    "y": 98,
+    "z": 6437,
+    "posizione": "nulla",
+    "colata": 206505,
+    "fornitore": "Qualitex",
+    "descrizione": "Amet laboris mollit voluptate ad non. Sit nisi ea aliquip laborum aute est. Consectetur incididunt Lorem et eiusmod enim quis ut proident excepteur. Ullamco anim deserunt eu Lorem commodo aliqua culpa aute culpa ipsum magna do elit sint.",
+    "deleted": true,
+    "ddt": {
+      "numero": 1832,
+      "data": "2016-07-17T08:01:08.876Z"
+    }
+  },
+  {
+    "_id": "5c5d46962fc5a23ba6b3fd52",
+    "codice": "consectetur",
+    "materiale": "Foreman",
+    "tipo": 0,
+    "x": 9320,
+    "y": 9279,
+    "z": 3119,
+    "posizione": "ullamco",
+    "colata": 603922,
+    "fornitore": "Recognia",
+    "descrizione": "Incididunt laboris sit consequat exercitation aliquip reprehenderit commodo nisi culpa quis pariatur. Ad cillum tempor aliqua ipsum non mollit. Cillum nostrud et pariatur consectetur aliquip cillum ut voluptate. Non excepteur sint id cupidatat esse magna occaecat deserunt occaecat velit et magna.",
+    "deleted": false,
+    "ddt": {
+      "numero": 5664,
+      "data": "2007-09-21T20:48:58.006Z"
+    }
+  },
+  {
+    "_id": "5c5d46960833c63cf9c09f0f",
+    "codice": "voluptate",
+    "materiale": "Santana",
+    "tipo": 2,
+    "x": 10161,
+    "y": 11944,
+    "z": 9255,
+    "posizione": "id",
+    "colata": 534506,
+    "fornitore": "Rooforia",
+    "descrizione": "Duis dolor ut adipisicing amet. Excepteur deserunt magna deserunt velit sit. Nulla qui eiusmod et amet non pariatur irure magna excepteur incididunt. Consequat deserunt elit enim anim aute veniam enim deserunt anim ad id. Id adipisicing officia deserunt nulla aliqua fugiat. Deserunt amet magna ullamco exercitation est veniam elit magna elit. Amet nulla nisi id consequat Lorem aliqua pariatur officia incididunt.",
+    "deleted": true,
+    "ddt": {
+      "numero": 5960,
+      "data": "2003-03-07T09:46:10.530Z"
+    }
+  },
+  {
+    "_id": "5c5d4696a04af71b2a40d16d",
+    "codice": "velit",
+    "materiale": "Kasey",
+    "tipo": 1,
+    "x": 4387,
+    "y": 2231,
+    "z": 4633,
+    "posizione": "et",
+    "colata": 971119,
+    "fornitore": "Daisu",
+    "descrizione": "Amet enim sit qui enim anim tempor deserunt eu aliqua eu nulla sunt ullamco. Cupidatat sunt nulla in cillum ad et consectetur dolore fugiat ad minim qui. Est magna adipisicing consequat excepteur cupidatat proident eiusmod amet in. Aliquip mollit sunt consequat sunt. Ea cillum tempor qui consequat. Reprehenderit deserunt ex consectetur do minim et sunt adipisicing id fugiat.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8095,
+      "data": "2009-02-17T16:39:18.519Z"
+    }
+  },
+  {
+    "_id": "5c5d469694d25f9e5ddb2e2f",
+    "codice": "ut",
+    "materiale": "Joyce",
+    "tipo": 2,
+    "x": 5665,
+    "y": 8210,
+    "z": 8944,
+    "posizione": "nostrud",
+    "colata": 835198,
+    "fornitore": "Escenta",
+    "descrizione": "Minim ullamco sit sint veniam id. Lorem nulla aliquip sit ut excepteur veniam. Aute ipsum cillum quis pariatur veniam adipisicing consectetur deserunt magna deserunt irure. Occaecat ut minim exercitation laborum enim excepteur. Lorem reprehenderit commodo velit duis ex velit adipisicing commodo consequat. Fugiat eiusmod dolor commodo elit amet et duis.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3899,
+      "data": "2007-08-09T07:20:05.343Z"
+    }
+  },
+  {
+    "_id": "5c5d4696348f0238e2874897",
+    "codice": "elit",
+    "materiale": "Christian",
+    "tipo": 0,
+    "x": 1209,
+    "y": 223,
+    "z": 5566,
+    "posizione": "Lorem",
+    "colata": 38334,
+    "fornitore": "Scentric",
+    "descrizione": "Lorem nulla quis dolor adipisicing. Non officia id dolore incididunt ullamco. Officia exercitation consequat sit ullamco veniam. Ut exercitation et aliqua fugiat magna Lorem dolore ea est elit consequat ad. Mollit occaecat esse Lorem duis ea reprehenderit voluptate eiusmod laborum anim. Qui deserunt excepteur consectetur laboris nostrud in cillum aute anim ex minim voluptate in. Adipisicing ea ut id et magna aliqua sit non nostrud consectetur aliquip quis consectetur.",
+    "deleted": false,
+    "ddt": {
+      "numero": 1983,
+      "data": "2016-04-09T00:02:39.914Z"
+    }
+  },
+  {
+    "_id": "5c5d469621b64e678128b618",
+    "codice": "aute",
+    "materiale": "Simpson",
+    "tipo": 2,
+    "x": 7435,
+    "y": 3746,
+    "z": 980,
+    "posizione": "magna",
+    "colata": 329205,
+    "fornitore": "Lumbrex",
+    "descrizione": "Aliqua voluptate pariatur aliquip consequat est deserunt tempor duis quis reprehenderit quis commodo. Deserunt sit eiusmod aliquip ea et adipisicing. Ullamco duis culpa incididunt esse veniam magna dolore eu culpa aute incididunt. Velit ullamco Lorem in aliquip amet consectetur. Quis eu minim exercitation aute sit.",
+    "deleted": false,
+    "ddt": {
+      "numero": 2637,
+      "data": "2005-06-27T11:43:42.020Z"
+    }
+  },
+  {
+    "_id": "5c5d46966ba10db316a08d0c",
+    "codice": "quis",
+    "materiale": "Teri",
+    "tipo": 1,
+    "x": 5039,
+    "y": 10901,
+    "z": 10545,
+    "posizione": "laborum",
+    "colata": 905693,
+    "fornitore": "Zillacon",
+    "descrizione": "Mollit sint officia aliqua minim cillum ut ea irure nisi mollit sint cupidatat consequat. Excepteur nostrud aliquip cillum consectetur sint ut veniam eiusmod consequat eiusmod ullamco cillum. Dolor consectetur minim labore ut aliqua officia id exercitation anim sit nisi ad qui. Minim id est duis nostrud enim aliquip eu ad ea sunt et in. Culpa ex incididunt duis minim voluptate ad duis cillum reprehenderit qui amet dolore sit ut. Qui Lorem sunt velit duis ea quis magna irure Lorem laborum aliqua Lorem. Sint id ad id sunt consectetur eiusmod voluptate.",
+    "deleted": true,
+    "ddt": {
+      "numero": 5750,
+      "data": "2000-04-02T01:16:29.640Z"
+    }
+  },
+  {
+    "_id": "5c5d46962b460a49fd90686e",
+    "codice": "culpa",
+    "materiale": "Kramer",
+    "tipo": 1,
+    "x": 9335,
+    "y": 9502,
+    "z": 1978,
+    "posizione": "pariatur",
+    "colata": 971530,
+    "fornitore": "Xth",
+    "descrizione": "Aliqua sint et cillum tempor laborum sit amet tempor pariatur fugiat. Enim deserunt eiusmod anim laboris irure. Dolore cillum nulla commodo aliqua elit in.",
+    "deleted": false,
+    "ddt": {
+      "numero": 2880,
+      "data": "2008-06-28T04:51:24.707Z"
+    }
+  },
+  {
+    "_id": "5c5d46964016e6e4ef6e89d6",
+    "codice": "dolore",
+    "materiale": "Cynthia",
+    "tipo": 2,
+    "x": 10848,
+    "y": 5424,
+    "z": 7032,
+    "posizione": "qui",
+    "colata": 784338,
+    "fornitore": "Concility",
+    "descrizione": "Eu officia cupidatat laborum ea incididunt excepteur ut officia elit Lorem amet. Deserunt minim reprehenderit ut eu Lorem anim ut do ex et est enim aliquip. Eiusmod adipisicing do ex commodo nulla deserunt deserunt elit dolor aliquip adipisicing eu. Do mollit do esse minim cillum aliqua non amet consequat. Ut amet do deserunt irure laboris esse eiusmod quis voluptate ex.",
+    "deleted": true,
+    "ddt": {
+      "numero": 3007,
+      "data": "2016-02-29T00:13:56.149Z"
+    }
+  },
+  {
+    "_id": "5c5d4696c3e5e1ade1a6f8e8",
+    "codice": "excepteur",
+    "materiale": "Kirk",
+    "tipo": 0,
+    "x": 9994,
+    "y": 9991,
+    "z": 4386,
+    "posizione": "voluptate",
+    "colata": 701953,
+    "fornitore": "Quonata",
+    "descrizione": "Voluptate nisi ut esse in ad ea mollit ut aute dolor ullamco eiusmod reprehenderit. Ex proident mollit et commodo est dolor ea sunt enim aliquip cupidatat culpa sunt. Elit est eu qui non irure Lorem ex aliquip exercitation in cillum. Exercitation esse nostrud ex elit exercitation commodo proident fugiat quis aliquip veniam adipisicing dolor culpa. Qui irure tempor cillum eiusmod amet pariatur fugiat minim incididunt elit elit aliqua culpa. Labore magna non eiusmod ea elit culpa consectetur magna nostrud sint.",
+    "deleted": true,
+    "ddt": {
+      "numero": 1403,
+      "data": "2015-10-01T22:35:27.366Z"
+    }
+  },
+  {
+    "_id": "5c5d469699d2d443b54f2140",
+    "codice": "labore",
+    "materiale": "Gwendolyn",
+    "tipo": 0,
+    "x": 10088,
+    "y": 7925,
+    "z": 11379,
+    "posizione": "mollit",
+    "colata": 724851,
+    "fornitore": "Powernet",
+    "descrizione": "Tempor ipsum cupidatat id sint ut. Anim do adipisicing consequat dolor commodo eu. Laboris aute veniam exercitation exercitation excepteur sint cillum mollit et. Anim veniam ut commodo laboris. Ad ad laboris ut in dolor deserunt cillum veniam exercitation nisi exercitation est veniam do.",
+    "deleted": false,
+    "ddt": {
+      "numero": 3997,
+      "data": "2017-10-19T06:42:22.311Z"
+    }
+  },
+  {
+    "_id": "5c5d46961d16a56ca67650d5",
+    "codice": "do",
+    "materiale": "Nieves",
+    "tipo": 1,
+    "x": 6479,
+    "y": 3711,
+    "z": 7544,
+    "posizione": "id",
+    "colata": 457295,
+    "fornitore": "Baluba",
+    "descrizione": "Aliqua cillum ex deserunt excepteur Lorem. Ut anim amet mollit excepteur in eu fugiat incididunt adipisicing incididunt magna. Cillum fugiat eu esse adipisicing. Dolore officia Lorem labore dolore do ipsum minim duis minim. Reprehenderit anim quis consequat id cillum labore proident proident eu eiusmod est cillum sit. Dolore in sint sit excepteur anim veniam id ipsum id cillum ut.",
+    "deleted": true,
+    "ddt": {
+      "numero": 5437,
+      "data": "2008-10-11T04:45:17.255Z"
+    }
+  },
+  {
+    "_id": "5c5d4696cf2fd5f28f4a3aa6",
+    "codice": "duis",
+    "materiale": "Rosa",
+    "tipo": 0,
+    "x": 1907,
+    "y": 4693,
+    "z": 11698,
+    "posizione": "et",
+    "colata": 377124,
+    "fornitore": "Viagreat",
+    "descrizione": "Occaecat sint consequat sit elit qui. Irure in eu est deserunt sit nisi. Anim elit excepteur dolore occaecat quis aute ea reprehenderit magna. Consectetur laboris nostrud excepteur nulla sint cillum voluptate culpa. Cillum Lorem eu id do sint sint eu in commodo nulla culpa.",
+    "deleted": false,
+    "ddt": {
+      "numero": 5506,
+      "data": "2015-12-18T22:11:16.913Z"
+    }
+  },
+  {
+    "_id": "5c5d469633fc017e9920e028",
+    "codice": "magna",
+    "materiale": "Velez",
+    "tipo": 2,
+    "x": 10997,
+    "y": 10890,
+    "z": 3706,
+    "posizione": "consectetur",
+    "colata": 827628,
+    "fornitore": "Jumpstack",
+    "descrizione": "Duis do nulla reprehenderit labore ea aute excepteur tempor. Nostrud voluptate enim proident cupidatat excepteur eiusmod sint. Ad officia dolore sit adipisicing exercitation. Ea nostrud ullamco ea commodo. Ullamco consectetur aute esse ullamco ipsum.",
+    "deleted": true,
+    "ddt": {
+      "numero": 5990,
+      "data": "2014-02-09T06:16:44.401Z"
+    }
+  },
+  {
+    "_id": "5c5d469607ba70189195f6bd",
+    "codice": "dolor",
+    "materiale": "Burks",
+    "tipo": 2,
+    "x": 6874,
+    "y": 4241,
+    "z": 2129,
+    "posizione": "labore",
+    "colata": 939256,
+    "fornitore": "Frolix",
+    "descrizione": "Ad tempor consequat aute amet et sunt nulla consequat officia officia velit. In velit dolore nisi ut dolor cupidatat ad ea proident velit irure. Laboris sint duis id aliqua. Ipsum commodo nulla incididunt nostrud nostrud non in quis culpa ipsum nostrud sunt nostrud proident. Ex reprehenderit est ipsum ex aliqua eu est aliqua quis cupidatat dolore nisi ullamco. Adipisicing anim amet commodo consectetur minim. Do est consectetur eiusmod aliqua ullamco reprehenderit magna et commodo laborum occaecat consequat voluptate.",
+    "deleted": true,
+    "ddt": {
+      "numero": 1659,
+      "data": "2005-12-18T21:44:53.860Z"
+    }
+  },
+  {
+    "_id": "5c5d4696b6d5c9070904d805",
+    "codice": "sunt",
+    "materiale": "Lynn",
+    "tipo": 1,
+    "x": 3212,
+    "y": 6240,
+    "z": 3075,
+    "posizione": "magna",
+    "colata": 604395,
+    "fornitore": "Otherway",
+    "descrizione": "Amet dolore cillum pariatur aliqua dolor eiusmod incididunt ipsum reprehenderit ea eu amet magna. Magna cupidatat Lorem labore incididunt nulla dolor consequat laboris reprehenderit quis ad aute aliquip. Ad laboris amet labore qui proident cupidatat amet consequat elit. Incididunt ex exercitation aliquip exercitation nisi. Qui cillum aute commodo ad et qui. Incididunt voluptate irure reprehenderit aute consectetur esse eu. Consectetur incididunt commodo quis voluptate laborum minim ipsum dolore minim ut consectetur cillum.",
+    "deleted": false,
+    "ddt": {
+      "numero": 480,
+      "data": "2018-01-06T01:17:40.371Z"
+    }
+  },
+  {
+    "_id": "5c5d4696dae4f7c393601bb1",
+    "codice": "adipisicing",
+    "materiale": "Morse",
+    "tipo": 2,
+    "x": 7649,
+    "y": 11612,
+    "z": 6310,
+    "posizione": "exercitation",
+    "colata": 58178,
+    "fornitore": "Perkle",
+    "descrizione": "Reprehenderit dolor deserunt in velit eiusmod ea id labore. Duis nisi anim qui culpa consequat cupidatat. Lorem voluptate qui ipsum amet quis ex occaecat cupidatat occaecat Lorem nisi.",
+    "deleted": true,
+    "ddt": {
+      "numero": 7379,
+      "data": "2008-08-24T03:56:19.704Z"
+    }
+  },
+  {
+    "_id": "5c5d46960c23bdccd38e96bf",
+    "codice": "ad",
+    "materiale": "Alexandra",
+    "tipo": 0,
+    "x": 4339,
+    "y": 5084,
+    "z": 2117,
+    "posizione": "incididunt",
+    "colata": 726612,
+    "fornitore": "Shadease",
+    "descrizione": "Duis aliquip et irure culpa ea ut proident dolor ex deserunt. Elit ullamco pariatur incididunt aliquip enim amet enim minim magna quis commodo. Lorem aliquip aliquip dolore laboris esse fugiat nulla incididunt ad incididunt laborum. Irure incididunt tempor aute ullamco aliquip quis mollit pariatur elit officia ea cupidatat duis. Anim velit eiusmod Lorem Lorem et ea. Fugiat quis occaecat duis nostrud amet.",
+    "deleted": true,
+    "ddt": {
+      "numero": 1058,
+      "data": "2005-12-11T13:37:25.302Z"
+    }
+  },
+  {
+    "_id": "5c5d4696e4bd822b16c0cc59",
+    "codice": "magna",
+    "materiale": "Mary",
+    "tipo": 2,
+    "x": 8614,
+    "y": 7498,
+    "z": 1477,
+    "posizione": "esse",
+    "colata": 179431,
+    "fornitore": "Peticular",
+    "descrizione": "Duis proident dolore proident laboris enim et. Esse duis eu labore proident pariatur proident tempor. Voluptate labore commodo quis sint sunt. Deserunt ad aute voluptate aliquip in non reprehenderit.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8986,
+      "data": "2003-01-09T19:23:00.923Z"
+    }
+  },
+  {
+    "_id": "5c5d4696057955e2274a59d5",
+    "codice": "consectetur",
+    "materiale": "Elisabeth",
+    "tipo": 2,
+    "x": 11007,
+    "y": 5160,
+    "z": 5609,
+    "posizione": "pariatur",
+    "colata": 657272,
+    "fornitore": "Otherside",
+    "descrizione": "Consequat velit nulla ad sint nostrud est incididunt. Sunt nisi in quis reprehenderit mollit in mollit quis anim irure esse voluptate pariatur. Enim in voluptate ex commodo deserunt voluptate amet dolore enim magna pariatur sit est.",
+    "deleted": true,
+    "ddt": {
+      "numero": 8724,
+      "data": "2005-08-22T02:53:17.425Z"
+    }
+  },
+  {
+    "_id": "5c5d46967f38d630d5e57b58",
+    "codice": "minim",
+    "materiale": "Bennett",
+    "tipo": 2,
+    "x": 3147,
+    "y": 6852,
+    "z": 907,
+    "posizione": "consequat",
+    "colata": 273442,
+    "fornitore": "Norsup",
+    "descrizione": "Minim magna do excepteur incididunt magna dolor magna. Sit ea nulla minim magna eiusmod ea ad. Velit nisi est in consectetur incididunt consectetur Lorem nisi ullamco velit. Non anim pariatur ea quis officia. Officia nostrud quis non consequat pariatur officia laborum magna velit consequat commodo Lorem anim.",
+    "deleted": true,
+    "ddt": {
+      "numero": 4571,
+      "data": "2002-12-25T18:28:02.896Z"
+    }
+  },
+  {
+    "_id": "5c5d4696670c71a9b69c695a",
+    "codice": "commodo",
+    "materiale": "Mcneil",
+    "tipo": 1,
+    "x": 4637,
+    "y": 8027,
+    "z": 2490,
+    "posizione": "sunt",
+    "colata": 482267,
+    "fornitore": "Vertide",
+    "descrizione": "Enim dolor voluptate non voluptate quis esse. Dolore aliquip sit nostrud aliqua occaecat esse velit laboris fugiat. Commodo deserunt officia est cupidatat. Ea sit id mollit voluptate aliqua sit excepteur.",
+    "deleted": false,
+    "ddt": {
+      "numero": 3144,
+      "data": "2009-06-12T08:16:52.363Z"
+    }
+  },
+  {
+    "_id": "5c5d469658f43fa815cdc413",
+    "codice": "consectetur",
+    "materiale": "Poole",
+    "tipo": 2,
+    "x": 11135,
+    "y": 4056,
+    "z": 6980,
+    "posizione": "officia",
+    "colata": 185820,
+    "fornitore": "Fibrodyne",
+    "descrizione": "Labore cupidatat tempor minim mollit. Culpa reprehenderit non sunt nulla labore nisi sint excepteur commodo fugiat deserunt. Voluptate sunt consequat qui sint consectetur deserunt ad elit elit cupidatat. Elit cupidatat labore ad sint magna ad ullamco nisi non. Voluptate exercitation occaecat incididunt laborum eiusmod.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8639,
+      "data": "2007-11-06T05:08:20.120Z"
+    }
+  },
+  {
+    "_id": "5c5d4696688fa3b4363d2aef",
+    "codice": "ex",
+    "materiale": "Gray",
+    "tipo": 1,
+    "x": 6932,
+    "y": 4078,
+    "z": 9915,
+    "posizione": "adipisicing",
+    "colata": 399279,
+    "fornitore": "Telequiet",
+    "descrizione": "Pariatur aute cillum exercitation nisi dolore irure excepteur nulla aliqua elit est. Irure in aute magna magna culpa ea incididunt reprehenderit exercitation. Veniam adipisicing velit veniam cillum enim anim duis ex aute ad esse non fugiat. Enim minim deserunt nisi et commodo irure officia. Fugiat ex non laborum quis proident laboris dolore id incididunt minim elit quis. Qui cupidatat eu in et velit laboris aliquip. Laboris eiusmod officia enim duis amet duis tempor laboris nisi incididunt laborum excepteur fugiat aliqua.",
+    "deleted": true,
+    "ddt": {
+      "numero": 1479,
+      "data": "2006-09-29T12:29:07.088Z"
+    }
+  },
+  {
+    "_id": "5c5d46965f247693f7ee571e",
+    "codice": "non",
+    "materiale": "Sherry",
+    "tipo": 0,
+    "x": 6011,
+    "y": 6734,
+    "z": 11451,
+    "posizione": "qui",
+    "colata": 528617,
+    "fornitore": "Recritube",
+    "descrizione": "Consectetur duis commodo consectetur sunt adipisicing aute. Voluptate duis aute sunt qui id deserunt magna. Qui eu consequat magna esse incididunt. Pariatur fugiat sunt quis est pariatur exercitation cupidatat nisi. Veniam cillum aute minim consectetur ex qui non.",
+    "deleted": false,
+    "ddt": {
+      "numero": 2487,
+      "data": "2013-08-20T21:43:05.317Z"
+    }
+  },
+  {
+    "_id": "5c5d46961fb739172e4cff16",
+    "codice": "cupidatat",
+    "materiale": "April",
+    "tipo": 2,
+    "x": 2088,
+    "y": 6390,
+    "z": 3300,
+    "posizione": "cillum",
+    "colata": 196220,
+    "fornitore": "Zillanet",
+    "descrizione": "Incididunt veniam elit Lorem sit et. Exercitation irure mollit pariatur eiusmod duis nisi elit enim in nostrud labore mollit minim. Dolor officia ex occaecat nisi esse in anim sint cillum officia reprehenderit id magna.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8192,
+      "data": "2017-05-06T18:25:11.051Z"
+    }
+  },
+  {
+    "_id": "5c5d4696f3e194f2f1ca2d73",
+    "codice": "labore",
+    "materiale": "Jo",
+    "tipo": 1,
+    "x": 1462,
+    "y": 3310,
+    "z": 4653,
+    "posizione": "in",
+    "colata": 510841,
+    "fornitore": "Quizka",
+    "descrizione": "Dolore culpa cupidatat exercitation mollit deserunt culpa excepteur veniam excepteur voluptate sint. Voluptate cupidatat cillum quis culpa ea ut. Qui nulla consectetur incididunt reprehenderit ullamco in amet.",
+    "deleted": true,
+    "ddt": {
+      "numero": 4126,
+      "data": "2015-01-03T20:17:15.901Z"
+    }
+  },
+  {
+    "_id": "5c5d4696b22b60b4809cdf82",
+    "codice": "occaecat",
+    "materiale": "Roberts",
+    "tipo": 0,
+    "x": 5314,
+    "y": 5472,
+    "z": 9933,
+    "posizione": "in",
+    "colata": 580265,
+    "fornitore": "Vidto",
+    "descrizione": "Est cillum ea aute ex enim ullamco consectetur pariatur est mollit dolor minim. Incididunt ea dolor incididunt mollit velit Lorem proident amet velit laboris excepteur sint qui sunt. Ad ea incididunt enim aliqua ullamco voluptate consequat.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8221,
+      "data": "2003-03-07T16:31:35.164Z"
+    }
+  },
+  {
+    "_id": "5c5d469654c154868488cb31",
+    "codice": "commodo",
+    "materiale": "Morgan",
+    "tipo": 0,
+    "x": 5404,
+    "y": 3537,
+    "z": 8112,
+    "posizione": "laborum",
+    "colata": 902245,
+    "fornitore": "Motovate",
+    "descrizione": "Culpa enim esse cillum irure excepteur tempor deserunt ex esse labore excepteur velit consequat officia. Laboris commodo sint aliquip proident nisi proident. Magna velit culpa veniam laborum et ullamco consectetur excepteur sunt.",
+    "deleted": true,
+    "ddt": {
+      "numero": 7769,
+      "data": "2018-04-22T15:19:45.448Z"
+    }
+  },
+  {
+    "_id": "5c5d46962c0e8413a6adcf64",
+    "codice": "non",
+    "materiale": "Larsen",
+    "tipo": 0,
+    "x": 1957,
+    "y": 5401,
+    "z": 11007,
+    "posizione": "amet",
+    "colata": 467630,
+    "fornitore": "Comdom",
+    "descrizione": "Id aliquip exercitation ea cupidatat incididunt culpa ullamco veniam et nisi nulla commodo laboris eiusmod. Labore veniam sint ea ad ut anim nulla. Laboris ut nostrud elit enim Lorem. Nulla ut exercitation cupidatat proident ex aliquip nulla dolor. Exercitation aliquip laborum do velit est quis nostrud.",
+    "deleted": true,
+    "ddt": {
+      "numero": 2638,
+      "data": "2002-06-14T16:13:33.894Z"
+    }
+  },
+  {
+    "_id": "5c5d4696085ce4780f5d1be9",
+    "codice": "labore",
+    "materiale": "Charlene",
+    "tipo": 0,
+    "x": 11193,
+    "y": 2,
+    "z": 20,
+    "posizione": "non",
+    "colata": 620927,
+    "fornitore": "Empirica",
+    "descrizione": "Non ex quis reprehenderit incididunt dolor id ex veniam ex do id. Dolore Lorem consequat occaecat culpa eu velit. Quis irure ut eiusmod consectetur labore culpa excepteur. Esse ad esse commodo eiusmod occaecat laboris dolore proident. Ullamco aliqua eiusmod exercitation voluptate pariatur.",
+    "deleted": true,
+    "ddt": {
+      "numero": 9687,
+      "data": "2005-04-12T03:38:15.621Z"
+    }
+  },
+  {
+    "_id": "5c5d4696eb149e31a3995bbb",
+    "codice": "laborum",
+    "materiale": "Wilma",
+    "tipo": 2,
+    "x": 696,
+    "y": 4307,
+    "z": 8820,
+    "posizione": "ad",
+    "colata": 945769,
+    "fornitore": "Enersol",
+    "descrizione": "Fugiat eu excepteur sunt nisi sint nisi duis dolore sunt enim proident labore ipsum. Sunt veniam enim eiusmod duis elit laboris exercitation exercitation reprehenderit ipsum consectetur pariatur exercitation. In aute laboris ipsum irure mollit aliquip aliquip nisi velit. Aute occaecat nisi ipsum et veniam. Irure nisi sint laborum do consectetur quis reprehenderit non amet in aute veniam minim exercitation.",
+    "deleted": false,
+    "ddt": {
+      "numero": 2624,
+      "data": "2018-06-29T23:54:45.476Z"
+    }
+  },
+  {
+    "_id": "5c5d4696616105c9b39102b1",
+    "codice": "ad",
+    "materiale": "Edwards",
+    "tipo": 1,
+    "x": 3998,
+    "y": 6676,
+    "z": 11509,
+    "posizione": "dolor",
+    "colata": 324937,
+    "fornitore": "Repetwire",
+    "descrizione": "Cillum consectetur ea adipisicing tempor duis do minim. Irure et officia magna aute aliqua reprehenderit ad quis mollit ad laboris pariatur minim esse. Lorem aute nulla et sit cillum sunt est aute sunt aute est eu deserunt. Commodo cillum nulla aute excepteur officia tempor ea consectetur enim reprehenderit voluptate mollit sint. Reprehenderit nisi anim aliquip deserunt sunt est. Exercitation quis nisi sunt ut incididunt aliqua laborum mollit tempor dolore nostrud eiusmod adipisicing laboris.",
+    "deleted": true,
+    "ddt": {
+      "numero": 115,
+      "data": "2004-06-29T02:10:51.001Z"
+    }
+  },
+  {
+    "_id": "5c5d469611ff763a4c9ef1fa",
+    "codice": "esse",
+    "materiale": "Russell",
+    "tipo": 1,
+    "x": 5724,
+    "y": 10827,
+    "z": 1327,
+    "posizione": "ut",
+    "colata": 746317,
+    "fornitore": "Rodemco",
+    "descrizione": "Culpa qui ea qui ullamco ullamco nulla. In velit est in laborum ea. Et elit sit est aute elit cupidatat aute. Consequat est consequat consequat non. Veniam eiusmod quis qui labore id esse elit tempor commodo nulla ex.",
+    "deleted": true,
+    "ddt": {
+      "numero": 7792,
+      "data": "2011-05-07T06:08:03.016Z"
+    }
+  },
+  {
+    "_id": "5c5d4696e8ea757ee874452a",
+    "codice": "anim",
+    "materiale": "Claudine",
+    "tipo": 0,
+    "x": 10703,
+    "y": 430,
+    "z": 2925,
+    "posizione": "laboris",
+    "colata": 103320,
+    "fornitore": "Unia",
+    "descrizione": "Adipisicing id id incididunt consequat incididunt sunt fugiat laborum est consectetur ad. Aliqua ea adipisicing quis Lorem Lorem minim qui fugiat deserunt velit est aliquip. Eu mollit consectetur fugiat aute reprehenderit est adipisicing aliqua voluptate mollit ipsum cupidatat.",
+    "deleted": true,
+    "ddt": {
+      "numero": 7828,
+      "data": "2011-10-09T05:29:52.071Z"
+    }
+  },
+  {
+    "_id": "5c5d469616db6045d8a9f679",
+    "codice": "magna",
+    "materiale": "Briggs",
+    "tipo": 2,
+    "x": 3838,
+    "y": 8629,
+    "z": 745,
+    "posizione": "id",
+    "colata": 726798,
+    "fornitore": "Decratex",
+    "descrizione": "Dolor est ad labore aute qui ipsum magna eiusmod. Mollit non sint officia mollit culpa consequat enim consequat amet. Consequat enim labore sit irure ex deserunt exercitation non sint in laborum ipsum aliquip commodo. Qui esse ex laboris eu. Nulla non fugiat esse quis exercitation cupidatat ullamco ea excepteur officia cillum velit. Enim in proident velit consequat labore enim nulla esse laborum aliqua nulla. Minim consequat nostrud enim velit ex magna ea irure dolore non magna laborum magna sit.",
+    "deleted": true,
+    "ddt": {
+      "numero": 2524,
+      "data": "2016-12-20T14:19:47.373Z"
+    }
+  },
+  {
+    "_id": "5c5d4696b8737370a4ce65f9",
+    "codice": "anim",
+    "materiale": "Natalia",
+    "tipo": 1,
+    "x": 11715,
+    "y": 1849,
+    "z": 2412,
+    "posizione": "nisi",
+    "colata": 52093,
+    "fornitore": "Metroz",
+    "descrizione": "Sint dolor ullamco magna enim voluptate nulla eu. Et reprehenderit nisi esse quis minim irure mollit duis esse cupidatat. Esse non aute laboris id enim magna officia consequat. In anim aute elit sint culpa ex ea qui.",
+    "deleted": false,
+    "ddt": {
+      "numero": 7601,
+      "data": "2011-12-11T01:48:10.501Z"
+    }
+  },
+  {
+    "_id": "5c5d469668d0cf4ecc2ab4f2",
+    "codice": "quis",
+    "materiale": "Deirdre",
+    "tipo": 0,
+    "x": 4768,
+    "y": 675,
+    "z": 4421,
+    "posizione": "nisi",
+    "colata": 870136,
+    "fornitore": "Optique",
+    "descrizione": "Officia quis est duis consequat nostrud elit laboris aliqua voluptate mollit ad ipsum irure pariatur. Ullamco esse do ullamco minim do laborum commodo. Officia proident dolor cillum non ea consectetur velit reprehenderit mollit duis cillum dolore irure proident. Aute ut anim nisi exercitation. Magna amet excepteur sint excepteur officia occaecat magna labore consectetur excepteur. Lorem ipsum eu nulla culpa laborum consectetur. Reprehenderit irure magna enim adipisicing ad quis.",
+    "deleted": true,
+    "ddt": {
+      "numero": 9207,
+      "data": "2011-05-06T01:03:29.377Z"
+    }
+  },
+  {
+    "_id": "5c5d46965b902c6efc3d13b8",
+    "codice": "anim",
+    "materiale": "Queen",
+    "tipo": 0,
+    "x": 4127,
+    "y": 2345,
+    "z": 1866,
+    "posizione": "esse",
+    "colata": 976020,
+    "fornitore": "Golistic",
+    "descrizione": "Do non veniam nulla est laboris ullamco nisi sunt dolor sit nulla. Ex labore excepteur nisi amet velit Lorem tempor ea proident. Mollit irure mollit fugiat dolor minim aliquip proident deserunt. Anim occaecat irure quis veniam officia et aute Lorem enim qui nulla. Occaecat cupidatat magna magna nisi tempor labore aute.",
+    "deleted": false,
+    "ddt": {
+      "numero": 8607,
+      "data": "2016-03-07T18:27:13.448Z"
+    }
+  }
+]
