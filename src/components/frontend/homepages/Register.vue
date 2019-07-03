@@ -9,7 +9,7 @@
 
                 <a-card class="center" v-if="!$store.state.isUserLoggedIn" title="Register" :style="{width:'22rem'}">
 
-
+                    <p class="alert" v-if="error">{{error}}</p>
                     <a-form
                             id="components-form-demo-normal-login"
                             :form="form"
@@ -45,10 +45,23 @@
                             </a-input>
                         </a-form-item>
                         <a-form-item>
-                            <a-input v-model="password"
+                            <a-input v-model="password1"
 
                                      type="password"
                                      placeholder="Password"
+                            >
+                                <a-icon
+                                        slot="prefix"
+                                        type="lock"
+                                        style="color: rgba(0,0,0,.25)"
+                                />
+                            </a-input>
+                        </a-form-item>
+                        <a-form-item>
+                            <a-input v-model="password2"
+
+                                     type="password"
+                                     placeholder="Confirm password"
                             >
                                 <a-icon
                                         slot="prefix"
@@ -236,6 +249,47 @@
                                          icon="ti-settings">
                                 <a-row :gutter="16">
                                     <a-col :span="24">
+
+                                        <a-form-item
+                                                label="What are your tech skills "
+                                                :label-col="{ span: 24 }"
+                                                :wrapper-col="{ span:  24}"
+                                        >
+                                            <template v-for="(tag, index) in tags">
+                                            <a-tooltip v-if="tag.length > 20" :key="tag" :title="tag">
+                                                <a-tag :key="tag"
+                                                       :afterClose="() => handleClose(tag)" color="#2db7f5">
+                                                    {{`${tag.slice(0, 20)}...`}}
+                                                </a-tag>
+                                            </a-tooltip>
+                                            <a-tag v-else :key="tag" :closable="index >= 0"
+                                                   :afterClose="() => handleClose(tag)" color="#2db7f5">
+                                                {{tag}}
+                                            </a-tag>
+                                        </template>
+                                        <a-input
+                                                v-if="inputVisible"
+                                                ref="input"
+                                                type="text"
+                                                size="small"
+                                                :style="{ width: '78px' }"
+                                                :value="inputValue"
+                                                @change="handleInputChange"
+                                                @blur="handleInputConfirm"
+                                                @keyup.enter="handleInputConfirm"
+                                        />
+                                        <a-tag v-else @click="showInput" style="background: #fff; borderStyle: dashed;">
+                                            <a-icon type="plus"/>
+                                            New Tag
+                                        </a-tag>
+                                        </a-form-item>
+
+
+
+
+                                    </a-col>
+
+                                    <a-col :span="24">
                                         <a-form-item
                                                 label="Bio "
                                                 :label-col="{ span: 24 }"
@@ -293,6 +347,7 @@
 
 
         </a-layout-content>
+        {{currentUserProfile.skills}}<br>
 
         {{currentUserProfile}}
         <Footer/>
@@ -312,6 +367,7 @@
     import ARadioButton from "ant-design-vue/es/radio/RadioButton";
     import {FormWizard, TabContent} from 'vue-form-wizard'
     import 'vue-form-wizard/dist/vue-form-wizard.min.css'
+    import Multiselect from 'vue-multiselect'
 
 
     export default {
@@ -325,7 +381,8 @@
             Pageheader,
             Footer,
             FormWizard,
-            TabContent
+            TabContent,
+            Multiselect
 
 
         },
@@ -335,9 +392,13 @@
                 firstname: '',
                 lastname: '',
                 email: '',
-                password: '',
+                password1: '',
+                password2: '',
                 error: null,
                 currentUserProfile: {},
+                tags: [],
+                inputVisible: false,
+                inputValue: ''
 
 
             }
@@ -348,6 +409,15 @@
 
             }
             this.currentUserProfile = (await UsersService.currentuser(this.$store.state.user.pk, auth)).data
+            let temptaglist = this.currentUserProfile.skills;
+
+            let array = temptaglist.replace(/'/g, '').replace(/ /g, '').split(',');
+
+            this.tags =array
+
+
+
+
 
         },
 
@@ -358,11 +428,13 @@
                         first_name: this.firstname,
                         last_name: this.lastname,
                         email: this.email,
-                        password1: this.password
+                        password1: this.password1,
+                        password2: this.password2
                     })
 
                     this.$store.dispatch('setToken', response.data.token)
                     this.$store.dispatch('setUser', response.data.user)
+
 
 
                 } catch (error) {
@@ -374,6 +446,7 @@
 
             onComplete: async function () {
                 if (this.currentUserProfile.user_type === 'developer') {
+
                     this.$router.push({
                         name: 'developer'
                     })
@@ -389,6 +462,7 @@
                         headers: {Authorization: 'JWT ' + this.$store.state.token}
 
                     }
+                    this.$store.dispatch('setUsertype', this.currentUserProfile.user_type)
                     const response = await UsersService.update(this.$store.state.user.pk, this.currentUserProfile, auth)
                     response()
 
@@ -409,14 +483,48 @@
                 })
 
             },
+            handleClose(removedTag) {
+                const tags = this.tags.filter(tag => tag !== removedTag)
+                this.tags = tags
+                let alltags =this.tags.join(", ")
+                this.currentUserProfile.skills=alltags
+
+            },
+
+            showInput() {
+                this.inputVisible = true
+                this.$nextTick(function () {
+                    this.$refs.input.focus()
+                })
+            },
+
+            handleInputChange(e) {
+                this.inputValue = e.target.value
+            },
+
+            handleInputConfirm() {
+                const inputValue = this.inputValue
+                let tags = this.tags
+                if (inputValue && tags.indexOf(inputValue) === -1) {
+                    tags = [...tags, inputValue]
+                }
+
+                let alltags =tags.join(", ")
+                this.currentUserProfile.skills=alltags
+                Object.assign(this, {
+                    tags,
+                    inputVisible: false,
+                    inputValue: '',
+                })
+            },
 
 
-        },
+        }
 
 
     }
 </script>
-
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 <style scoped>
     .center {
         margin: auto;

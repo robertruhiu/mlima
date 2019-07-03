@@ -1,305 +1,354 @@
 <template>
-    <a-layout>
+    <a-layout :style="{background:'#fff'}">
+        <pageheader></pageheader>
+        <a-layout-content :style="{ padding: '0 0px', marginTop: '1rem' }">
+            <div style="margin-top: 3rem">
+                <a-row>
+                    <a-col :span="24" style="background-color: #1976D2;margin-bottom: 1rem">
+                        <div style="padding: 2rem;" class='center'>
+                            <a-auto-complete
+                                    :dataSource="dataSource"
+                                    style="width: 80%"
+                                    placeholder="Search skills like react,javascript,vue python"
+                                    v-model="search"
+
+                            >
+
+                                <a-input>
+                                    <a-icon slot="suffix" type="search"  class="certain-category-icon"/>
+                                </a-input>
+                            </a-auto-complete>
 
 
-        <!---Input--->
-        <a-input v-model="ricerca"
-                 @keyup="updateData();"
-                 label="Cerca" placeholder="Basic usage"/>
-        <a-popover title="Title" trigger="click">
-    <template slot="content">
-      <a-card class="filtri" title="Filters" v-model="filtro.menu">
-                <p>Catergories</p>
-            </a-card>
-    </template>
-    <a-button type="primary">Click me</a-button>
-  </a-popover>
-
-        <!-- Filters -->
-
-        <v-menu
-                v-model="filtro.menu"
-                :close-on-content-click="false"
-                :nudge-width="200"
-                left
-        >
-
-            <a-button slot="activator" type="primary" shape="circle" icon="search"></a-button>
-            <a-card class="filtri" title="Filters">
-                <p>Catergories</p>
-            </a-card>
-
-            <a-card class="filtri">
-                <a-card-title class="subheading">Filtri</a-card-title>
+                            <span>
 
 
-                <v-card-text>
-                    <!-- Categorie -->
-                    <v-list-tile-content>
-                        <v-list-tile-title>Categorie</v-list-tile-title>
-                        <v-list-tile-action>
-                            <v-item-group multiple v-model="filtro.filtri.categorie">
-                                <v-item>
-                                    <v-chip
-                                            slot-scope="{
-                          active,
-                          toggle
-                        }"
-                                            :selected="active"
-                                            @click="toggle"
-                                            :color="active ? 'primary' : ''"
-                                            :text-color="active ? 'white' : ''"
+                            <country-select v-model="country" style="width: 20%;color: #007BFF"
+                                            placeholder="location" class="ant-input"
+                            />
+                            </span>
+
+                        </div>
+                    </a-col>
+                </a-row>
+                <a-row>
+
+                    <a-col :span="5">
+                        <div style="padding-left: 3rem">
+
+
+                            <div style="padding: 2rem;width: 12rem" class="">
+                                <h3 style="color: #0679fb">
+                                    <a-icon type="filter" theme="twoTone"/>
+                                    Filters
+
+                                </h3>
+                                <div :style="{ borderBottom: '1px solid #E9E9E9' }">
+                                    <a-checkbox
+                                            :indeterminate="indeterminate"
+                                            @change="onCheckAllChange"
+                                            :checked="checkAll"
                                     >
-                                        Quadro
-                                    </v-chip>
-                                </v-item>
+                                        Availability
+                                    </a-checkbox>
+                                </div>
+                                <br/>
+                                <a-checkbox-group :options="plainOptions" v-model="checkedList" @change="onChange"/>
 
-                            </v-item-group>
-                        </v-list-tile-action>
-                    </v-list-tile-content>
+                                <div :style="{ borderBottom: '1px solid #E9E9E9',marginTop: '1rem' }">
+                                    <a-checkbox
+                                            :indeterminate="indeterminate1"
+                                            @change="onCheckAllChange1"
+                                            :checked="checkAll1"
+                                    >
+                                        Experience
+                                    </a-checkbox>
+                                </div>
+                                <br/>
+                                <a-checkbox-group :options="plainOptions1" v-model="checkedList1" @change="onChange1">
 
+                                </a-checkbox-group>
 
-                </v-card-text>
-
-                <v-card-actions>
-                    <v-spacer></v-spacer>
-
-                    <v-btn color="primary" flat @click="saveFilters(true);"
-                    >Cancella
-                    </v-btn
-                    >
-                    <v-btn color="primary" @click="saveFilters(false);">Salva</v-btn>
-                </v-card-actions>
-            </a-card>
-        </v-menu>
-
-
-        <!-- LIST -->
-        <v-data-iterator
-                :items="posts"
-                :rows-per-page-items="rowsPerPageItems"
-                :pagination.sync="pagination"
-                content-tag="v-layout"
-                row
-                wrap
-        >
-            <v-expansion-panel slot="item" slot-scope="props" xs12>
-                <v-expansion-panel-content>
-                    <div slot="header">
-                        <v-layout align-center justify-start fill-height>
-                            <div class="margin-rx-10">
-                                <v-icon>{{ icons[props.item.tipo] }}</v-icon>
                             </div>
-                            <v-flex> {{ props.item.materiale }}</v-flex>
-                        </v-layout>
-                    </div>
-                    <v-card>
-                        <v-card-text primary-title>
-                            <v-flex>
-                                <v-layout justify-center align-content-center>
-                                    <v-flex><b>Codice:</b> {{ props.item.codice }}</v-flex>
-                                    <v-flex><b>Tipo:</b> {{ tipi[props.item.tipo] }}</v-flex>
-                                </v-layout>
-                            </v-flex>
-                            <v-flex>
-                                <v-layout justify-center align-content-center>
-                                    <v-flex><b>Lunghezza:</b> {{ props.item.y }}mm</v-flex>
-                                    <v-flex v-if="props.item.tipo != 1">
-                                        <b>Larghezza:</b> {{ props.item.x }}mm
-                                    </v-flex
-                                    >
-                                    <v-flex v-if="props.item.tipo != 1">
-                                        <b>Altezza:</b> {{ props.item.z }}mm
-                                    </v-flex
-                                    >
-                                    <v-flex v-else><b>Diametro:</b> {{ props.item.x }}mm</v-flex>
-                                </v-layout>
-                            </v-flex>
-                            <v-flex v-if="openDdt(props.item, 'posizione')">
-                                <v-layout justify-center align-content-center>
-                                    <v-flex v-if="props.item.posizione">
-                                        <b>Posizione:</b> {{ props.item.posizione }}
-                                    </v-flex>
-                                    <v-flex v-if="props.item.colata">
-                                        <b>Colata:</b> {{ props.item.colata }}
-                                    </v-flex>
-                                    <v-flex v-if="props.item.fornitore">
-                                        <b>Fornitore:</b> {{ props.item.fornitore }}
-                                    </v-flex>
-                                </v-layout>
-                            </v-flex>
+                        </div>
 
-                            <v-flex xs6 v-if="props.item.descrizione">
-                                <b>Descrizione</b></v-flex
-                            >
-                            <v-flex xs12 v-if="props.item.descrizione">
-                                {{ props.item.descrizione }}
-                            </v-flex
-                            >
-                            <v-flex xs12 v-if="openDdt(props.item.ddt, 'ddt')"
-                            >
-                                <v-divider></v-divider
-                                >
-                            </v-flex>
-                            <v-flex xs12 v-if="openDdt(props.item.ddt, 'ddt')"
-                            ><h4>DDT</h4></v-flex
-                            >
-                            <v-flex v-if="openDdt(props.item.ddt, 'ddt')">
-                                <v-layout justify-center align-content-center>
-                                    <v-flex v-if="props.item.ddt.numero">
-                                        <b>Numero:</b> {{ props.item.ddt.numero }}
-                                    </v-flex>
-                                    <v-flex v-if="props.item.ddt.data">
-                                        <b>Data:</b> {{ formattedDate(props.item.ddt.data) }}
-                                    </v-flex>
-                                </v-layout>
-                            </v-flex>
-                        </v-card-text>
-                        <v-card-actions>
-                            <v-spacer></v-spacer>
+                    </a-col>
+                    <a-col :span="14">
 
-                            <v-btn flat color="primary">Modifica</v-btn>
-                        </v-card-actions>
-                        <v-divider></v-divider>
-                    </v-card>
-                </v-expansion-panel-content>
-            </v-expansion-panel>
-        </v-data-iterator>
+                        <a-list style="padding-bottom: 2rem"
+                                itemLayout="vertical"
+                                size="large"
+                                :pagination="pagination"
+                                :dataSource="filteredList"
+                        >
+
+                            <a-list-item class="ant-card" style="margin-bottom: 1rem;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding: 1rem;
+                            "
+                                         slot="renderItem" slot-scope="item, index" key="item.title">
+
+                                <div>
+                                    <a-row>
+                                        <a-col span="4">
+                                            <a-avatar class="poolavatar"
+                                                      style="">
+                                                {{item.name}}
+                                            </a-avatar>
+                                        </a-col>
+                                        <a-col span="15">
+                                            <h4>Bio</h4>
+                                            <p style="">{{item.about}}</p>
+                                            <br>
+                                            <span style="" v-for="skill in item.skills" v-bind:key="skill.id">
+                                                <a-tag color="#F0F6FD" style="color:#007BFF;">{{skill}}</a-tag>
+
+                                            </span>
+
+                                        </a-col>
+                                        <a-col span="5">
+                                            <div>
+
+                                                <a-tag color="#F0F6FD" style='color: #007BFF'>
+                                                    <a-icon type="environment"/>
+                                                    {{item.location}}
+                                                </a-tag>
+                                                <a-tag color="#F7E7F5" style="color: #B82EA4">{{item.availabilty}}
+                                                </a-tag>
+
+
+                                            </div>
+
+                                        </a-col>
+
+                                        <a-col :span="24">
+                                            <div style="text-align: center;">
+                                                <a @click="showDrawer(item.id)">View Profile</a>
+                                            </div>
+                                        </a-col>
+
+
+                                    </a-row>
+                                </div>
+
+
+                            </a-list-item>
+                        </a-list>
+
+
+                    </a-col>
+                </a-row>
+
+                <a-drawer
+                        width=640
+                        placement="right"
+                        :closable="false"
+                        @close="onClose"
+                        :visible="visible"
+                >
+                    <span><p :style="[pStyle, pStyle2]">User Profile<a-button type="primary" style="float: right">Pick Candidate</a-button></p> </span>
+                    <p :style="pStyle">{{profile}}</p>
+                    <p v-if="experience !== null">{{experience}}</p>
+                    <p v-else>No work experience</p>
+                    <p v-if="portfolio !== null">{{portfolio}}</p>
+                    <p v-else>No past projects</p>
+
+                </a-drawer>
+            </div>
+
+
+        </a-layout-content>
+        <Footer/>
     </a-layout>
+
+
 </template>
+<script>
+    class Developer {
+        constructor(id, name, skills, about, location, availabilty) {
+            this.id = id;
+            this.name = name;
+            this.skills = skills;
+            this.about = about;
+            this.location = location;
+            this.availabilty = availabilty
+        }
+    }
 
-<script slot-scope="true">
 
-    import moment from 'moment';
+    import "../../../assets/css/styles.css";
+    import Pageheader from '@/components/layout/Header.vue'
+    import Footer from '@/components/layout/Footer.vue'
+    import ARow from "ant-design-vue/es/grid/Row";
+    import ACol from "ant-design-vue/es/grid/Col";
+    import UsersService from '@/services/UsersService'
 
 
+    const plainOptions = ['Fulltime', 'Contract', 'Remote', 'Parttime']
+    const defaultCheckedList = ['Fulltime', 'Contract', 'Remote', 'Parttime']
+    const plainOptions1 = ['1 year', '2 years', '3 years', '4 years above']
+    const defaultCheckedList1 = ['1 year', '2 years', '3 years', '4 years above']
     export default {
         name: 'talent',
-        props: {
-            value: {
-                type: Array,
-                default: function () {
-                    return [];
-                }
-            }
-        },
         data() {
             return {
-                ricerca: '',
-                updating: false,
-                icons: ['stop', 'fiber_manual_record', 'view_compact'],
-                tipi: ['Quadro', 'Tondo', 'Altro'],
-                filtro: {
-                    menu: false,
-                    filtri: {
-                        categorie: [0, 1, 2],
-                        ddt: '',
-                        lunghezza: [0, 12000]
-                    }
+                visible: false,
+                devs: null,
+                alldevs: null,
+                search: '',
+                profile: null,
+                experience: null,
+                portfolio: null,
+                country: null,
+                checkedList: defaultCheckedList,
+                indeterminate: true,
+                checkAll: false,
+                plainOptions,
+                checkedList1: defaultCheckedList1,
+                indeterminate1: true,
+                checkAll1: false,
+                dataSource: ['react', 'angular', 'javascript'],
+
+                plainOptions1,
+
+                pStyle: {
+                    fontSize: '16px',
+                    color: 'rgba(0,0,0,0.85)',
+                    lineHeight: '24px',
+                    display: 'block',
+                    marginBottom: '16px',
                 },
-                rowsPerPageItems: [10, 20, 40, 80],
+                pStyle2: {
+                    marginBottom: '24px'
+                },
+                listData: [],
                 pagination: {
-                    rowsPerPage: 10
+                    onChange: (page) => {
+                        console.log(page);
+                    },
+                    pageSize: 3,
                 },
-                posts: this.value
-            };
+                actions: [
+                    {type: 'star-o', text: '156'},
+                    {type: 'like-o', text: '156'},
+                    {type: 'message', text: '2'},
+                ],
+            }
         },
+        components: {
+            ACol,
+            ARow,
+            Pageheader,
+            Footer
+        },
+        async mounted() {
+            this.devs = (await UsersService.devs()).data;
+            this.alldevs = (await UsersService.allusers()).data;
+            for (let j = 0; j < this.alldevs.length; j++) {
+                for (let i = 0; i < this.devs.length; i++) {
+                    if (this.alldevs[j].id === this.devs[i].id) {
+                        let skill_list = this.devs[i].skills.split(',');
+
+                        let id = this.devs[i].id
+                        let name = this.alldevs[j].first_name[0].toUpperCase() + this.alldevs[j].last_name[0].toUpperCase()
+                        let skills = skill_list
+                        let about = this.devs[i].about
+                        let location = this.devs[i].country
+                        let availabilty = this.devs[i].availabilty
+                        let onedev = new Developer(
+                            id, name, skills, about, location, availabilty
+                        )
+
+
+                        this.listData.push(onedev)
+
+                    }
+
+
+                }
+            }
+
+
+        },
+
         methods: {
-            openDdt: function (data, parameter) {
-                switch (parameter) {
-                    case 'posizione':
-                        return !(!data.posizione && !data.colata && !data.fornitore);
-                    case 'ddt':
-                        return !(!data.numero && !data.data);
-                    default:
-                        return true;
-                }
-            },
-            formattedDate(date) {
-                return date ? moment(date).format('DD/MM/YYYY') : '';
-            },
-            saveFilters(elimina) {
+            async showDrawer(dev_id) {
+                this.visible = true
+                this.profile = (await UsersService.talentuser(dev_id)).data
                 try {
-                    if (elimina)
-                        this.filtro.filtri = {
-                            categorie: [0, 1, 2],
-                            ddt: '',
-                            lunghezza: [0, 12000]
-                        };
-                    this.filtro.menu = false;
-                    this.updateData(this.filtro.filtri);
+                    this.experience = (await UsersService.experience(dev_id)).data
                 } catch (err) {
-                    console.log(`ERRORE!: ${err}`);
+                    this.experience = null
                 }
+                try {
+                    this.portfolio = (await UsersService.portfolio(dev_id)).data
+                } catch (err) {
+                    this.portfolio = null
+                }
+
+
             },
-            async updateData() {
-                this.updating = true;
-                var posts = this.value;
+            onClose() {
+                this.visible = false
+            },
+            onChange(checkedList) {
+                this.indeterminate = !!checkedList.length && (checkedList.length < plainOptions.length)
+                this.checkAll = checkedList.length === plainOptions.length
+            },
+            onCheckAllChange(e) {
+                Object.assign(this, {
+                    checkedList: e.target.checked ? plainOptions : [],
+                    indeterminate: false,
+                    checkAll: e.target.checked,
+                })
+            },
+            onChange1(checkedList1) {
+                this.indeterminate1 = !!checkedList1.length && (checkedList1.length < plainOptions1.length)
+                this.checkAll1 = checkedList1.length === plainOptions1.length
+            },
+            onCheckAllChange1(e) {
+                Object.assign(this, {
+                    checkedList1: e.target.checked ? plainOptions1 : [],
+                    indeterminate1: false,
+                    checkAll1: e.target.checked,
+                })
+            },
+            filterOption(input, option) {
+                return option.componentOptions.children[0].text.toUpperCase().indexOf(input.toUpperCase()) >= 0
+            }
+        },
+        computed: {
+            filteredList() {
+                return this.listData.filter(dev => {
 
-                if (this.filtro.filtri) {
-                    posts = posts.filter(({tipo, ddt, y}) => {
-                        try {
-                            var condizioni = [];
-                            condizioni.push(this.filtro.filtri.categorie.includes(tipo));
-                            condizioni.push(
-                                y >= this.filtro.filtri.lunghezza[0] &&
-                                y <= this.filtro.filtri.lunghezza[1]
-                            );
-                            if (this.filtro.filtri.ddt !== '')
-                                condizioni.push(
-                                    ddt.numero
-                                        .toString(10)
-                                        .toLowerCase()
-                                        .includes(this.filtro.filtri.ddt)
-                                );
-                            return condizioni.every(Boolean);
-                        } catch (err) {
-                            //console.log(`ERRORE: ${err}`);
-                        }
-                    });
-                }
-
-                if (this.ricerca !== '') {
-                    const term = this.ricerca.toLowerCase();
-
-                    var p = posts.filter(
-                        ({codice, materiale}) =>
-                            codice.toLowerCase().includes(term) ||
-                            materiale.toLowerCase().includes(term)
-                    );
-                    posts = p;
-                }
-
-                //FINE RICHIESTA
-                this.posts = posts;
-                this.updating = false;
+                    return dev.skills.toString().toLowerCase().includes(this.search.toLowerCase())
+                })
             }
         }
-    };
+    }
+
 </script>
 
-<style>
-    .toolbar {
-        color: white !important;
+<style scoped>
+    .poolavatar {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+        background-color: #0679FB;
+        margin-top: 2rem;
     }
 
-    .margin-rx-10 {
-        margin-right: 10px;
+    .talentcard {
+        margin-bottom: 1rem;
     }
 
-    .filtri .subheading {
-        padding: 10px 16px !important;
+    .center {
+        margin: auto;
+        width: 60%;
+
+
     }
 
-    .filtri .v-list__tile__content {
-        margin-bottom: 10px;
-    }
 
-    .filtri .v-list__tile__action {
-        width: 98%;
-    }
 
-    .filtri {
-        max-width: 400px;
-    }
 </style>

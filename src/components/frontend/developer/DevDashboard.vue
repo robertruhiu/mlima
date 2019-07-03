@@ -35,7 +35,14 @@
                 <div :style="{ padding: '24px', background: '#fff', minHeight: '80vh',marginTop:'0%' }">
 
                     <h1>Current user is {{this.$store.state.user.email}}</h1>
+                    experience:
                     {{currentUserProfile.years}}
+                    <br>
+                    user type:
+                    {{currentUserProfile.user_type}}
+                    <br>
+                    skills:
+                    {{currentUserProfile.skills}}
 
 
 
@@ -85,6 +92,13 @@
                     }
             this.currentUserProfile = (await UsersService.currentuser(this.$store.state.user.pk,auth)).data
 
+        },
+        async updated(){
+            const auth = {
+                        headers: {Authorization: 'JWT ' + this.$store.state.token}
+
+                    }
+            this.currentUserProfile = (await UsersService.currentuser(this.$store.state.user.pk,auth)).data
         },
         methods: {
             navigateTo(route) {

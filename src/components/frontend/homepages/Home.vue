@@ -66,7 +66,6 @@
                     <a-row>
                         <a-col :span="8">
                             <a-card class="workscard"
-                                    hoverable
 
                             >
                                 <img src="../../../assets/images/props/path1.png"
@@ -92,7 +91,7 @@
                         </a-col>
                         <a-col :span="8">
                             <a-card class="workscard"
-                                    hoverable
+
 
                             >
                                 <img src="../../../assets/images/props/path2.png"
@@ -118,7 +117,7 @@
                         </a-col>
                         <a-col :span="8">
                             <a-card class="workscard"
-                                    hoverable
+
 
                             >
                                 <img src="../../../assets/images/props/path3.png"
@@ -160,96 +159,47 @@
                             <p>We believe that your ideal developer <br>should be only a click away,take advantage <br>
                                 of some of our
                                 filters to easily access<br> candidates </p>
-                            <div v-for="dev in devs" v-bind:key="dev.id">
-                                {{dev}}
+                            <div v-for="item in listData" v-bind:key="item.id" style="margin-bottom: 1rem;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding: 1rem;
+                            ">
+                                <a-row>
+                                        <a-col span="4">
+                                            <a-avatar class="poolavatar"
+                                                      style="">
+                                                {{item.name}}
+                                            </a-avatar>
+                                        </a-col>
+                                        <a-col span="15">
+                                            <h4>Bio</h4>
+                                            <p style="">{{item.about}}</p>
+                                            <br>
+                                            <span style="" v-for="skill in item.skills" v-bind:key="skill.id">
+                                                <a-tag color="#F0F6FD" style="color:#007BFF;">{{skill}}</a-tag>
+
+                                            </span>
+
+                                        </a-col>
+                                        <a-col span="5">
+                                            <div>
+
+                                                <a-tag color="#F0F6FD" style='color: #007BFF'>
+                                                    <a-icon type="environment"/>
+                                                    {{item.location}}
+                                                </a-tag>
+                                                <a-tag color="#F7E7F5" style="color: #B82EA4">{{item.availabilty}}
+                                                </a-tag>
+
+
+                                            </div>
+
+                                        </a-col>
+
+
+
+
+                                    </a-row>
                             </div>
-                            <a-row class="ant-card talentcard"
-                                   style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                <a-col :span="4" style="padding: 5%">
-                                    <a-avatar class="poolavatar">DR</a-avatar>
-                                </a-col>
-                                <a-col :span="15" style="padding-top: 3%;padding-left: 4%;padding-bottom: 2%">
-                                    <p class="ant-card-meta-description">Fullstack Developer</p>
-                                    <p class="ant-card-meta-description">Fast iterator in technology with a strong
-                                        working
-                                        background on the node js framework.Abstract thinker
-                                        challenging the normal thought process,fun to be around (9gager) </p>
-                                    <div>
-                                        <a-tag color="#2db7f5">#f50</a-tag>
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-                                        <a-tag color="#2db7f5">#87d068</a-tag>
-                                        <a-tag color="#2db7f5">#108ee9</a-tag>
-                                    </div>
-                                </a-col>
-                                <a-col :span="5" style="padding-top: 3%;">
-                                    <div>
 
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-
-
-                                    </div>
-                                </a-col>
-
-                            </a-row>
-                            <a-row class="ant-card talentcard"
-                                   style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                <a-col :span="4" style="padding: 5%">
-                                    <a-avatar class="poolavatar">DR</a-avatar>
-                                </a-col>
-                                <a-col :span="15" style="padding-top: 3%;padding-left: 4%;padding-bottom: 2%">
-                                    <p class="ant-card-meta-description">Fullstack Developer</p>
-                                    <p class="ant-card-meta-description">Fast iterator in technology with a strong
-                                        working
-                                        background on the node js framework.Abstract thinker
-                                        challenging the normal thought process,fun to be around (9gager) </p>
-                                    <div>
-                                        <a-tag color="#2db7f5">#f50</a-tag>
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-                                        <a-tag color="#2db7f5">#87d068</a-tag>
-                                        <a-tag color="#2db7f5">#108ee9</a-tag>
-                                    </div>
-                                </a-col>
-                                <a-col :span="5" style="padding-top: 3%;">
-                                    <div>
-
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-
-
-                                    </div>
-                                </a-col>
-
-                            </a-row>
-                            <a-row class="ant-card talentcard"
-                                   style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                <a-col :span="4" style="padding: 5%">
-                                    <a-avatar class="poolavatar">DR</a-avatar>
-                                </a-col>
-                                <a-col :span="15" style="padding-top: 3%;padding-left: 4%;padding-bottom: 2%">
-                                    <p class="ant-card-meta-description">Fullstack Developer</p>
-                                    <p class="ant-card-meta-description">Fast iterator in technology with a strong
-                                        working
-                                        background on the node js framework.Abstract thinker
-                                        challenging the normal thought process,fun to be around (9gager) </p>
-                                    <div>
-                                        <a-tag color="#2db7f5">#f50</a-tag>
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-                                        <a-tag color="#2db7f5">#87d068</a-tag>
-                                        <a-tag color="#2db7f5">#108ee9</a-tag>
-                                    </div>
-                                </a-col>
-                                <a-col :span="5" style="padding-top: 3%;">
-                                    <div>
-
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-                                        <a-tag color="#2db7f5">#2db7f5</a-tag>
-
-
-                                    </div>
-                                </a-col>
-
-                            </a-row>
 
 
                         </div>
@@ -257,10 +207,13 @@
                     <a-col :span="24">
                         <div class="center">
                             <p style="text-align: center">
-                                <a-button type='primary'
-                                          style="width: 10rem;color: white;height: 3rem;border-radius: 23px">View more
+                                <router-link to="talent">
+                                    <a-button type='primary'
+                                          style="width: 10rem;color: white;height: 3rem;border-radius: 23px" >View more
                                     Talent
                                 </a-button>
+                                </router-link>
+
                             </p>
                         </div>
                     </a-col>
@@ -374,6 +327,16 @@
 
 
 <script>
+    class Developer {
+        constructor(id, name, skills, about, location, availabilty) {
+            this.id = id;
+            this.name = name;
+            this.skills = skills;
+            this.about = about;
+            this.location = location;
+            this.availabilty = availabilty
+        }
+    }
     import Pageheader from '@/components/layout/Header.vue'
     import Footer from '@/components/layout/Footer.vue'
     import ARow from "ant-design-vue/es/grid/Row";
@@ -386,6 +349,8 @@
         data() {
             return {
                 devs: null,
+                alldevs:null,
+                listData:[]
 
             }
         },
@@ -399,7 +364,32 @@
 
         },
         async mounted() {
+
             this.devs = (await UsersService.devs()).data;
+            this.alldevs = (await UsersService.allusers()).data;
+            for (let j = 0; j < this.alldevs.length; j++) {
+                for (let i = 0; i < this.devs.length; i++) {
+                    if (this.alldevs[j].id === this.devs[i].id) {
+                        let skill_list = this.devs[i].skills.split(',');
+
+                        let id = this.devs[i].id
+                        let name = this.alldevs[j].first_name[0].toUpperCase() + this.alldevs[j].last_name[0].toUpperCase()
+                        let skills = skill_list
+                        let about = this.devs[i].about
+                        let location = this.devs[i].country
+                        let availabilty = this.devs[i].availabilty
+                        let onedev = new Developer(
+                            id, name, skills, about, location, availabilty
+                        )
+
+
+                        this.listData.push(onedev)
+
+                    }
+
+
+                }
+            }
 
         },
         methods: {},
@@ -485,7 +475,8 @@
         height: 80px;
         line-height: 80px;
         font-size: 30px;
-        background-color: #B627A1;
+        background-color: #0679FB;
+        margin-top: 2rem;
     }
 
     .talentcard {

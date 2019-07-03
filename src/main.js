@@ -13,9 +13,11 @@ import VueFormWizard from 'vue-form-wizard'
 import VueSelectImage from 'vue-select-image'
 require('vue-select-image/dist/vue-select-image.css')
 Vue.use(VueSelectImage)
-
+import ReactiveSearch from '@appbaseio/reactivesearch-vue'
+import Multiselect from 'vue-multiselect'
+Vue.component('multiselect', Multiselect)
 import {
-
+  Drawer,
   Alert,
   Avatar,
   Checkbox,
@@ -35,7 +37,7 @@ import {
   Layout,
   List,
   Popover,
-
+  AutoComplete,
   Menu,
 
 
@@ -63,7 +65,10 @@ Vue.use(Carousel);
 Vue.use(Radio);
 Vue.use(VueCarousel);
 Vue.use(Select);
-Vue.use(Checkbox)
+Vue.use(Checkbox);
+Vue.use(ReactiveSearch)
+Vue.use(Drawer)
+Vue.use(AutoComplete)
 import vueCountryRegionSelect from 'vue-country-region-select'
 Vue.use(vueCountryRegionSelect)
 import VueSession from 'vue-session'

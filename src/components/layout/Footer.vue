@@ -39,8 +39,8 @@
                     </div>
                     <div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-6">
                         <div class="footer-center"><h2 style="color: white">Company</h2>
-                            <div><a href="https://cn.vuejs.org/" target="_blank">Privacy</a></div>
-                            <div><a href="https://cli.vuejs.org/" target="_blank">Terms</a></div>
+                            <div><router-link to="privacy">Privacy</router-link></div>
+                            <div><router-link to="terms">Terms</router-link></div>
 
                         </div>
                     </div>
