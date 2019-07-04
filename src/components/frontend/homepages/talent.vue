@@ -3,9 +3,14 @@
         <pageheader></pageheader>
         <a-layout-content :style="{ padding: '0 0px', marginTop: '1rem' }">
             <div style="margin-top: 3rem">
-                <a-row>
-                    <a-col :span="24" style="background-color: #1976D2;margin-bottom: 1rem">
+                <a-row style="background-color:#1976D2;margin-bottom: 1rem ">
+                    <a-col span="4">
+                        <h3 style="color: white;font-size: 2rem;padding-left: 4rem;padding-top: 1.5rem;">Talent</h3>
+                    </a-col>
+                    <a-col :span="16">
+
                         <div style="padding: 2rem;" class='center'>
+
                             <a-auto-complete
                                     :dataSource="dataSource"
                                     style="width: 80%"
@@ -15,7 +20,7 @@
                             >
 
                                 <a-input>
-                                    <a-icon slot="suffix" type="search"  class="certain-category-icon"/>
+                                    <a-icon slot="suffix" type="search" class="certain-category-icon"/>
                                 </a-input>
                             </a-auto-complete>
 
@@ -28,9 +33,14 @@
                             />
                             </span>
 
+
                         </div>
                     </a-col>
+                    <a-col span="4">
+
+                    </a-col>
                 </a-row>
+
                 <a-row>
 
                     <a-col :span="5">
@@ -73,7 +83,9 @@
                         </div>
 
                     </a-col>
+
                     <a-col :span="14">
+
 
                         <a-list style="padding-bottom: 2rem"
                                 itemLayout="vertical"
@@ -106,7 +118,7 @@
 
                                         </a-col>
                                         <a-col span="5">
-                                            <div>
+                                            <div style="padding-top: 1rem;">
 
                                                 <a-tag color="#F0F6FD" style='color: #007BFF'>
                                                     <a-icon type="environment"/>
@@ -117,13 +129,13 @@
 
 
                                             </div>
-
-                                        </a-col>
-
-                                        <a-col :span="24">
-                                            <div style="text-align: center;">
-                                                <a @click="showDrawer(item.id)">View Profile</a>
+                                            <div style="margin-top: 6rem">
+                                                <a-button type="primary" ghost @click="showDrawer(item.id)">View
+                                                    Profile
+                                                </a-button>
                                             </div>
+
+
                                         </a-col>
 
 
@@ -145,12 +157,24 @@
                         @close="onClose"
                         :visible="visible"
                 >
-                    <span><p :style="[pStyle, pStyle2]">User Profile<a-button type="primary" style="float: right">Pick Candidate</a-button></p> </span>
-                    <p :style="pStyle">{{profile}}</p>
+
+                    <span><p :style="[pStyle, pStyle2]">User Profile
+                        <a-button  type="primary"  style="float: right;"
+                                  @click="pickcandidate(profile.user)">
+                            Pick Candidate
+                        </a-button>
+
+
+                    </p>
+                    </span>
+                    <p :style="pStyle">{{profile.user}}</p>
+                    <p>{{profile}}</p>
+
                     <p v-if="experience !== null">{{experience}}</p>
                     <p v-else>No work experience</p>
                     <p v-if="portfolio !== null">{{portfolio}}</p>
                     <p v-else>No past projects</p>
+
 
                 </a-drawer>
             </div>
@@ -180,7 +204,8 @@
     import Footer from '@/components/layout/Footer.vue'
     import ARow from "ant-design-vue/es/grid/Row";
     import ACol from "ant-design-vue/es/grid/Col";
-    import UsersService from '@/services/UsersService'
+    import UsersService from '@/services/UsersService';
+    import MarketPlaceService from '@/services/Marketplace'
 
 
     const plainOptions = ['Fulltime', 'Contract', 'Remote', 'Parttime']
@@ -195,7 +220,7 @@
                 devs: null,
                 alldevs: null,
                 search: '',
-                profile: null,
+                profile: {},
                 experience: null,
                 portfolio: null,
                 country: null,
@@ -206,6 +231,10 @@
                 checkedList1: defaultCheckedList1,
                 indeterminate1: true,
                 checkAll1: false,
+                mydevs: null,
+                tags: [],
+
+
                 dataSource: ['react', 'angular', 'javascript'],
 
                 plainOptions1,
@@ -270,9 +299,32 @@
 
         },
 
+
         methods: {
             async showDrawer(dev_id) {
                 this.visible = true
+                const auth = {
+                    headers: {Authorization: 'JWT ' + this.$store.state.token}
+
+                }
+                const requesteddevs = await MarketPlaceService.mydevs(this.$store.state.user.pk, auth)
+
+                this.mydevs = requesteddevs.data
+                if (this.mydevs !== null) {
+                    let array = this.mydevs.developers.slice(1, -1).replace(/'/g, '').replace(/ /g, '').split(',');
+                    let templist = []
+                    for (let i = 0; i < array.length; i++) {
+                        templist.push(parseInt(array[i]))
+                    }
+                    this.tags = templist
+                    for (let j = 0; j < this.tags.length; j++) {
+
+                }
+
+
+                }
+
+
                 this.profile = (await UsersService.talentuser(dev_id)).data
                 try {
                     this.experience = (await UsersService.experience(dev_id)).data
@@ -287,6 +339,20 @@
 
 
             },
+            async pickcandidate(dev) {
+
+                const auth = {
+                    headers: {Authorization: 'JWT ' + this.$store.state.token}
+
+                }
+                this.mydevs.push(dev)
+                const devpicking = await MarketPlaceService.pickdev(this.$store.state.user.pk, dev, auth).data
+                devpicking()
+                this.mydevs.push(dev)
+
+
+            },
+
             onClose() {
                 this.visible = false
             },
@@ -326,6 +392,7 @@
         }
     }
 
+
 </script>
 
 <style scoped>
@@ -348,7 +415,6 @@
 
 
     }
-
 
 
 </style>

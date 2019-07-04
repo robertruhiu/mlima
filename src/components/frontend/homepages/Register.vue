@@ -256,35 +256,34 @@
                                                 :wrapper-col="{ span:  24}"
                                         >
                                             <template v-for="(tag, index) in tags">
-                                            <a-tooltip v-if="tag.length > 20" :key="tag" :title="tag">
-                                                <a-tag :key="tag"
+                                                <a-tooltip v-if="tag.length > 20" :key="tag" :title="tag">
+                                                    <a-tag :key="tag"
+                                                           :afterClose="() => handleClose(tag)" color="#2db7f5">
+                                                        {{`${tag.slice(0, 20)}...`}}
+                                                    </a-tag>
+                                                </a-tooltip>
+                                                <a-tag v-else :key="tag" :closable="index >= 0"
                                                        :afterClose="() => handleClose(tag)" color="#2db7f5">
-                                                    {{`${tag.slice(0, 20)}...`}}
+                                                    {{tag}}
                                                 </a-tag>
-                                            </a-tooltip>
-                                            <a-tag v-else :key="tag" :closable="index >= 0"
-                                                   :afterClose="() => handleClose(tag)" color="#2db7f5">
-                                                {{tag}}
+                                            </template>
+                                            <a-input
+                                                    v-if="inputVisible"
+                                                    ref="input"
+                                                    type="text"
+                                                    size="small"
+                                                    :style="{ width: '78px' }"
+                                                    :value="inputValue"
+                                                    @change="handleInputChange"
+                                                    @blur="handleInputConfirm"
+                                                    @keyup.enter="handleInputConfirm"
+                                            />
+                                            <a-tag v-else @click="showInput"
+                                                   style="background: #fff; borderStyle: dashed;">
+                                                <a-icon type="plus"/>
+                                                New Tag
                                             </a-tag>
-                                        </template>
-                                        <a-input
-                                                v-if="inputVisible"
-                                                ref="input"
-                                                type="text"
-                                                size="small"
-                                                :style="{ width: '78px' }"
-                                                :value="inputValue"
-                                                @change="handleInputChange"
-                                                @blur="handleInputConfirm"
-                                                @keyup.enter="handleInputConfirm"
-                                        />
-                                        <a-tag v-else @click="showInput" style="background: #fff; borderStyle: dashed;">
-                                            <a-icon type="plus"/>
-                                            New Tag
-                                        </a-tag>
                                         </a-form-item>
-
-
 
 
                                     </a-col>
@@ -328,11 +327,102 @@
                                      subtitle="">
                             <tab-content title="Company details"
                                          icon="ti-user">
-                                My first tab content
+                                <a-form :form="form">
+                                    <a-row :gutter="16">
+                                        <a-col :span="8">
+                                            <a-form-item
+                                                    label="Company name"
+                                                    :label-col="{ span: 24 }"
+                                                    :wrapper-col="{ span:  24}"
+                                            >
+                                                <a-input v-model="currentUserProfile.company"
+
+                                                />
+                                            </a-form-item>
+
+                                        </a-col>
+
+                                        <a-col :span="8">
+                                            <a-form-item
+                                                    label="Company website link"
+                                                    :label-col="{ span: 24 }"
+                                                    :wrapper-col="{ span:  24}"
+                                            >
+                                                <a-input v-model="currentUserProfile.company_url"
+
+                                                />
+                                            </a-form-item>
+
+                                        </a-col>
+
+                                        <a-col :span="8">
+                                            <a-form-item
+                                                    label="Country"
+                                                    :label-col="{ span: 24 }"
+                                                    :wrapper-col="{ span:  24}"
+                                            >
+                                                <country-select v-model="currentUserProfile.country"
+                                                                class="ant-input"
+                                                />
+                                            </a-form-item>
+
+                                        </a-col>
+
+                                        <a-col :span="8">
+                                            <a-form-item
+                                                    label="Company industry sector"
+                                                    :label-col="{ span: 24 }"
+                                                    :wrapper-col="{ span:  24}"
+                                            >
+                                                <a-input v-model="currentUserProfile.industry"
+
+                                                />
+                                            </a-form-item>
+
+                                        </a-col>
+                                        <a-col :span="8">
+                                            <a-form-item
+                                                    label="Your role at the Company"
+                                                    :label-col="{ span: 24 }"
+                                                    :wrapper-col="{ span:  24}"
+                                            >
+                                                <a-input v-model="currentUserProfile.job_role"
+                                                         placeholder="Recruiter,CTO,HR,CEO etc"
+
+                                                />
+                                            </a-form-item>
+
+                                        </a-col>
+                                    </a-row>
+
+
+                                </a-form>
                             </tab-content>
                             <tab-content title="Skills of interest"
                                          icon="ti-settings">
-                                My second tab content
+                                <a-row :gutter="16">
+                                    <a-col :span="24">
+
+                                        <a-form-item>
+                                            <p>Pick skills to enable candidate
+                                                recommendations</p>
+                                            <div>
+
+                                                <template v-for=" tag in recommendationtags">
+                                                    <a-checkable-tag style="border-color: blue;font-size: 14px"
+                                                            :key="tag"
+                                                            :checked="selectedTags.indexOf(tag) > -1"
+                                                            @change="(checked) => handleChange(tag, checked)"
+                                                    >
+                                                        {{tag}}
+                                                    </a-checkable-tag>
+                                                </template>
+                                            </div>
+
+
+                                        </a-form-item>
+                                    </a-col>
+                                </a-row>
                             </tab-content>
 
                         </form-wizard>
@@ -341,15 +431,14 @@
                     </div>
 
                 </div>
+                {{currentUserProfile}}
 
 
             </div>
 
 
         </a-layout-content>
-        {{currentUserProfile.skills}}<br>
 
-        {{currentUserProfile}}
         <Footer/>
     </a-layout>
 
@@ -367,7 +456,6 @@
     import ARadioButton from "ant-design-vue/es/radio/RadioButton";
     import {FormWizard, TabContent} from 'vue-form-wizard'
     import 'vue-form-wizard/dist/vue-form-wizard.min.css'
-    import Multiselect from 'vue-multiselect'
 
 
     export default {
@@ -382,7 +470,6 @@
             Footer,
             FormWizard,
             TabContent,
-            Multiselect
 
 
         },
@@ -398,7 +485,9 @@
                 currentUserProfile: {},
                 tags: [],
                 inputVisible: false,
-                inputValue: ''
+                inputValue: '',
+                recommendationtags: ['Movies', 'Books', 'Music', 'Sports'],
+                selectedTags: [],
 
 
             }
@@ -413,9 +502,7 @@
 
             let array = temptaglist.replace(/'/g, '').replace(/ /g, '').split(',');
 
-            this.tags =array
-
-
+            this.tags = array
 
 
 
@@ -434,7 +521,6 @@
 
                     this.$store.dispatch('setToken', response.data.token)
                     this.$store.dispatch('setUser', response.data.user)
-
 
 
                 } catch (error) {
@@ -463,8 +549,11 @@
 
                     }
                     this.$store.dispatch('setUsertype', this.currentUserProfile.user_type)
+                    this.$store.dispatch('setUser_id', this.currentUserProfile.user)
                     const response = await UsersService.update(this.$store.state.user.pk, this.currentUserProfile, auth)
                     response()
+
+
 
 
                 } catch (error) {
@@ -486,8 +575,8 @@
             handleClose(removedTag) {
                 const tags = this.tags.filter(tag => tag !== removedTag)
                 this.tags = tags
-                let alltags =this.tags.join(", ")
-                this.currentUserProfile.skills=alltags
+                let alltags = this.tags.join(", ")
+                this.currentUserProfile.skills = alltags
 
             },
 
@@ -509,13 +598,23 @@
                     tags = [...tags, inputValue]
                 }
 
-                let alltags =tags.join(", ")
-                this.currentUserProfile.skills=alltags
+                let alltags = tags.join(", ")
+                this.currentUserProfile.skills = alltags
                 Object.assign(this, {
                     tags,
                     inputVisible: false,
                     inputValue: '',
                 })
+            },
+            handleChange(tag, checked) {
+                const {selectedTags} = this
+                const nextSelectedTags = checked
+                    ? [...selectedTags, tag]
+                    : selectedTags.filter(t => t !== tag)
+
+                this.selectedTags = nextSelectedTags
+                let alltags = this.selectedTags.join(", ")
+                this.currentUserProfile.skills=alltags
             },
 
 

@@ -1,5 +1,5 @@
 <template>
-    <a-layout-footer style="min-height: 16rem;background-color: #189DD8">
+    <a-layout-footer style="min-height: 16rem;background-color: #1875d2">
         <a-row :gutter="48" :style="{marginTop: '5rem',padding:'0 6rem'}">
             <a-col :span="6">
                 <img class="imagecenter" src="../../assets/logo.svg" style="margin-top: 4rem;width: 50%">

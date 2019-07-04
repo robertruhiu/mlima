@@ -41,6 +41,7 @@ import {
   Menu,
 
 
+
   Tag,
 
 } from 'ant-design-vue';
@@ -69,6 +70,7 @@ Vue.use(Checkbox);
 Vue.use(ReactiveSearch)
 Vue.use(Drawer)
 Vue.use(AutoComplete)
+
 import vueCountryRegionSelect from 'vue-country-region-select'
 Vue.use(vueCountryRegionSelect)
 import VueSession from 'vue-session'

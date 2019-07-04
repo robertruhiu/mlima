@@ -112,6 +112,7 @@
                     }
                     this.currentUserProfile = (await User.currentuser(this.$store.state.user.pk,auth)).data
                     this.$store.dispatch('setUsertype', this.currentUserProfile.user_type)
+                    this.$store.dispatch('setUser_id', this.currentUserProfile.user)
                     if (this.$store.state.usertype === 'developer') {
                         this.$router.push({
                             name: 'developer'

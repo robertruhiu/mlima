@@ -10,6 +10,7 @@ export default new Vuex.Store({
     createPersistedState()
   ],
   state: {
+    user_id:null,
     token: null,
     user: null,
     isUserLoggedIn: false,
@@ -26,6 +27,9 @@ export default new Vuex.Store({
     },
     setUsertype(state,usertype){
       state.usertype = usertype
+    },
+    setUser_id(state,user_id){
+      state.user_id = user_id
     }
 
   },
@@ -38,6 +42,9 @@ export default new Vuex.Store({
     },
     setUsertype ({commit}, usertype) {
       commit('setUsertype', usertype)
+    },
+    setUser_id ({commit}, user_id) {
+      commit('setUser_id', user_id)
     }
   }
 })
