@@ -90,7 +90,7 @@
         },
         data() {
             return {
-                email: 'dennis@codeln.com',
+                email: 'robertruhiu@gmail.com',
                 password: 'Pokerface1994',
                 error: null,
                 usertype: null,

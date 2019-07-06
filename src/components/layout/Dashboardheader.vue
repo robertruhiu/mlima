@@ -10,7 +10,7 @@
 
       </div>
       <div class="ant-menu-horizontal " :style="{ lineHeight: '64px',float: 'right',borderBottom: 0}">
-        <a-button type="primary" ghost :style="{}">Post a job</a-button>
+
         <router-link to="/login" class="ant-menu-item" style="margin-bottom: 0" v-if ="!$store.state.isUserLoggedIn" >Login</router-link>
         <router-link to="/register" class="ant-menu-item" style="margin-bottom: 0" v-if ="!$store.state.isUserLoggedIn" >Sign up</router-link>
         <a>

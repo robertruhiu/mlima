@@ -8,6 +8,8 @@ import Privacy from '@/components/frontend/homepages/privacy'
 import Terms from '@/components/frontend/homepages/terms'
 import JobBoard from '@/components/frontend/homepages/jobboard'
 import RecruiterDashboard from '@/components/frontend/recruiter/Dashboard'
+import ManageJobs from '@/components/frontend/recruiter/Managejob'
+import MyCandidates from '@/components/frontend/recruiter/Mycandidates'
 import DeveloperDashboard from '@/components/frontend/developer/DevDashboard'
 Vue.use(Router);
 
@@ -58,6 +60,16 @@ export default new Router({
             path: '/terms',
             name: 'terms',
             component: Terms
+        },
+        {
+            path: '/managejobs',
+            name: 'managejobs',
+            component: ManageJobs
+        },
+        {
+            path: '/mycandidates',
+            name: 'mycandidates',
+            component: MyCandidates
         },
 
 

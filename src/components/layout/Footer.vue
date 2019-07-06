@@ -12,29 +12,21 @@
                     <div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-6">
                         <div class="footer-center"><h2 style="color: white">Services</h2>
                             <div>
-                                <a href="https://github.com/vueComponent/ant-design-vue"
-                                   target="_blank ">
+                                <router-link to="talent">
                                     Talent
-                                </a>
+                                </router-link>
+
+
 
                             </div>
                             <div>
-                                <a href="https://ant.design/docs/react/introduce-cn" target="_blank">
+                                <router-link to="jobs">
                                     Job Board
-                                </a>
+                                </router-link>
 
 
                             </div>
-                            <div>
-                                <a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank">Ant
-                                    Pricing
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://github.com/websemantics/awesome-ant-design" target="_blank ">
 
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-6">

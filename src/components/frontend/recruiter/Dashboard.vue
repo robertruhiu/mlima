@@ -1,82 +1,169 @@
 <template>
     <a-layout id="components-layout-demo-side" style="min-height: 100vh">
-        <Pageheader/>
+
         <a-layout-sider
                 collapsible
                 v-model="collapsed" @click="expand"
-                :style="{backgroundColor:'white',marginTop: '4.42%',position:'fixed'}"
+                :style="{backgroundColor:'white',marginTop: '',position:'fixed'}"
         >
+            <div>
+                <router-link to="/">
+                    <img v-bind:style="logo" src="../../../assets/logobg.svg"
+                         style="width: 120px;height: 31px;margin-top: 7%;margin-bottom: 6%;margin-left: 9%">
+
+                </router-link>
+
+
+            </div>
 
             <a-menu :defaultSelectedKeys="['1']" mode="inline" style="min-height: 85vh">
                 <a-menu-item key="1">
-                    <a-icon type="dashboard"/>
-                    <span>Dashboard</span>
+                    <router-link to="recruiter">
+                        <a-icon type="dashboard"/>
+                        <span>Dashboard</span>
+                    </router-link>
+                </a-menu-item>
+                <a-menu-item key="5">
+                    <a v-on:click="showJobDrawer">
+                        <a-icon type="edit"/>
+                        <span>Post a job</span>
+                    </a>
                 </a-menu-item>
                 <a-menu-item key="2">
-                    <a-icon type="project"/>
-                    <span>My jobs</span>
+                    <router-link to="managejobs">
+                        <a-icon type="project"/>
+                        <span>My jobs</span>
+                    </router-link>
                 </a-menu-item>
                 <a-menu-item key="3">
-                    <a-icon type="solution"/>
-                    <span>My Candidates</span>
+                    <router-link to="mycandidates">
+                        <a-icon type="team"/>
+                        <span>My Candidates</span>
+                    </router-link>
                 </a-menu-item>
 
                 <a-menu-item key="4">
                     <router-link to="talent">
-                        <a-icon type="team"/>
+                        <a-icon type="star"/>
                         <span>Talent Pool</span>
                     </router-link>
+
+                </a-menu-item>
+                <a-menu-item key="6">
+                    <router-link to="talent">
+                        <a-icon type="user"/>
+                        <span>My profile</span>
+                    </router-link>
+
+                </a-menu-item>
+                <a-menu-item key="7">
+                    <a @click="logout">
+                        <a-icon type="export"/>
+                        <span>Logout</span>
+                    </a>
 
                 </a-menu-item>
 
             </a-menu>
         </a-layout-sider>
+
         <a-layout style="backgroundColor:#fff">
-            <a-layout-header style="background: #fff; padding: 0"/>
+
             <a-layout-content v-bind:style="expanded" style="margin-left: 14.6%">
+                <a-layout-header
+                        :style="{ position: 'fixed', zIndex: 1, width: '100%',backgroundColor:'#004ec7',height:'100px' }">
+                    <a-row>
+                        <a-col :span="4">
+                            <p style="color: white;line-height: 61px;font-size: 17px;font-weight:bold">{{greeting}}
+                                {{(this.$store.state.user.first_name).charAt(0).toUpperCase()+
+                                this.$store.state.user.first_name.slice(1)}}</p>
+                            <p style="color: white;font-size: 12px;font-weight: bold;line-height: 0;">4 interviews
+                                Today</p>
+                        </a-col>
 
 
-                <div :style="{ padding: '24px', background: '#fff', minHeight: '80vh',marginTop:'0%' }">
+                        <a-col :span="4">
+                            <a-card class="events">
+                                <p style="line-height: 0">9:00 am - 10:30 am</p>
+                                <p>Dennis Ruhiu</p>
+
+                            </a-card>
+                        </a-col>
+                        <a-col :span="4">
+                            <a-card class="events">
+                                <p style="line-height: 0">1:00 pm - 2:00 pm</p>
+                                <p>Test User</p>
+
+                            </a-card>
+                        </a-col>
+                        <a-col :span="4">
+                            <a-card class="events">
+                                <p style="line-height: 0">2:30 pm - 3:30 pm</p>
+                                <p>Jessica Freeman</p>
+
+                            </a-card>
+                        </a-col>
+                        <a-col :span="4">
+                            <a-card class="events">
+                                <p style="line-height: 0">2:30 pm - 3:30 pm</p>
+                                <p>Jessica Freeman</p>
+
+                            </a-card>
+                        </a-col>
+
+
+                    </a-row>
+
+                </a-layout-header>
+
+
+                <div :style="{ padding: '24px', background: '#fff', minHeight: '80vh',marginTop:'6rem' }">
                     <a-row>
                         <a-col span="24">
                             <div>
-                                <h3 style="margin-left: 1.5rem;">Hello
-                                    {{(this.$store.state.user.first_name).charAt(0).toUpperCase()+
-                                    this.$store.state.user.first_name.slice(1)}}.Welcome to
-                                    your Codeln Dashboard</h3>
+                                <h3 style="margin-left: 1.5rem;color: #1976D2;font-weight: bold">What would you like to
+                                    do today?</h3>
                                 <a-row :gutter="16"
-                                       style="padding-right: 2rem;padding-left: 1.5rem;padding-top: 2rem;padding-bottom: 2rem;">
-                                    <a-col class="boxes" :span="6">
-                                        <a-row class="ant-card actioncards">
-                                            <a-col span="8">
-                                                <img class="poolavatar" src="../../../assets/images/edit-tools.svg">
-                                            </a-col>
-                                            <a-col span="16">
-                                                <p>Post a Job</p>
-                                                <p style="">Get devs for your vacancy</p>
+                                       style="padding-right: 2rem;padding-left: 1.5rem;padding-bottom: 1.5rem;">
+                                    <a v-on:click="showJobDrawer">
+                                        <a-col class="boxes" :span="6">
+
+                                            <a-row class="ant-card actioncards">
+                                                <a-col span="8">
+                                                    <img class="poolavatar" src="../../../assets/images/edit-tools.svg">
+                                                </a-col>
+                                                <a-col span="16">
+                                                    <p>Post a Job</p>
+                                                    <p style="margin: 0;">Get devs for your vacancy</p>
 
 
-                                            </a-col>
+                                                </a-col>
+
+                                            </a-row>
+
+                                        </a-col>
+                                    </a>
 
 
-                                        </a-row>
-                                    </a-col>
-                                    <a-col class="boxes" :span="6">
-                                        <a-row class="ant-card actioncards">
-                                            <a-col span="8">
-                                                <img class="poolavatar" src="../../../assets/images/cv.svg">
-                                            </a-col>
-                                            <a-col span="16">
-                                                <p>Manage Jobs</p>
-                                                <p style="">Monitor and manage job applications</p>
+                                    <router-link to="managejobs">
+                                        <a-col class="boxes" :span="6">
+
+                                            <a-row class="ant-card actioncards">
+                                                <a-col span="8">
+                                                    <img class="poolavatar" src="../../../assets/images/cv.svg">
+                                                </a-col>
+                                                <a-col span="16">
+                                                    <p>Manage Jobs</p>
+                                                    <p style="margin: 0;">Monitor and manage job applications</p>
 
 
-                                            </a-col>
+                                                </a-col>
 
 
-                                        </a-row>
+                                            </a-row>
 
-                                    </a-col>
+                                        </a-col>
+                                    </router-link>
 
                                     <a-col class="boxes" :span="6">
                                         <a-row class="ant-card actioncards">
@@ -84,8 +171,8 @@
                                                 <img class="poolavatar" src="../../../assets/images/statistics.svg">
                                             </a-col>
                                             <a-col span="16">
-                                                <p>My Candidates</p>
-                                                <p style="">Manage and track devs picked from talent pool</p>
+                                                <p>Manage My Candidates</p>
+                                                <p style="margin: 0;">Manage and track devs picked from talent pool</p>
 
 
                                             </a-col>
@@ -100,8 +187,8 @@
                                                     <img class="poolavatar" src="../../../assets/images/star.svg">
                                                 </a-col>
                                                 <a-col span="16">
-                                                    <p>Talent Pool</p>
-                                                    <p style="">View more devs from our pool</p>
+                                                    <p>Browse the Talent Pool</p>
+                                                    <p style="margin: 0;">View more devs from our pool</p>
 
 
                                                 </a-col>
@@ -115,16 +202,17 @@
                                 <a-row style="margin-left: 1.5rem;margin-right: 1.5rem;margin-bottom: 1rem">
                                     <a-col :span="12">
 
-                                        <h3 style="color: #1976D2;font-weight: 550">Recent Jobs</h3>
+                                        <h3 style="color: #1976D2;font-weight: bold">Your Recent Jobs</h3>
 
 
                                     </a-col>
                                     <a-col :span="12">
-
-                                        <a-button type="primary" style="float: right">
-                                            See more
-                                            <a-icon type="right"/>
-                                        </a-button>
+                                        <router-link to="managejobs">
+                                            <a-button type="primary" style="float: right">
+                                                See more
+                                                <a-icon type="right"/>
+                                            </a-button>
+                                        </router-link>
 
 
                                     </a-col>
@@ -216,6 +304,19 @@
 
 
                 </div>
+                <!----Post Job drawer------->
+                <a-drawer
+                        width=640
+                        placement="right"
+                        :closable="false"
+                        @close="onCloseJobDrawer"
+                        :visible="jobdrawervisible"
+                >
+
+                    <p>Job drawer</p>
+
+
+                </a-drawer>
 
             </a-layout-content>
 
@@ -225,6 +326,7 @@
 
 
 <script>
+
 
     import Pageheader from '@/components/layout/Dashboardheader.vue'
     import UsersService from '@/services/UsersService'
@@ -238,7 +340,9 @@
                 currentUserProfile: null,
                 collapsed: false,
                 expanded: false,
-                image: 'https://unsplash.com/photos/cssvEZacHvQ',
+                logo: false,
+                greeting: null,
+                jobdrawervisible: false,
                 styleObject: {
 
                     marginLeft: '5.9%',
@@ -247,6 +351,21 @@
 
                     marginLeft: '14.6%'
                 },
+                expandedlogo: {
+                    width: '120px',
+                    height: '31px',
+                    marginTop: '7%',
+                    marginLeft: '9%',
+                    marginBottom: '6%'
+
+                },
+                contractedlogo: {
+                    width: '100%',
+                    height: '31px',
+                    marginTop: '7%',
+                    marginLeft: '1%',
+                    marginBottom: '7%'
+                }
 
             }
         },
@@ -263,30 +382,55 @@
 
             }
             this.currentUserProfile = (await UsersService.currentuser(this.$store.state.user.pk, auth)).data
+            let today = new Date()
+            let curHr = today.getHours()
+
+            if (curHr < 12) {
+                this.greeting = 'Good Morning'
+
+            } else if (curHr < 18) {
+                this.greeting = 'Good Afternoon'
+
+            } else {
+                this.greeting = 'Good Evening'
+
+            }
         },
         methods: {
+            logout() {
+                this.$store.dispatch('setToken', null);
+                this.$store.dispatch('setUser', null)
+                this.$router.push({
+                    name: 'home'
+                })
+            },
             navigateTo(route) {
                 this.$router.push(route)
             },
             expand() {
                 if (this.collapsed) {
                     this.expanded = this.styleObject;
+                    this.logo = this.contractedlogo;
 
                 } else {
                     this.expanded = this.styleObject2;
+                    this.logo = this.expandedlogo;
+
                 }
-            }
+            },
+            showJobDrawer() {
+                this.jobdrawervisible = true
+            },
+            onCloseJobDrawer() {
+                this.jobdrawervisible = false
+            },
         },
 
     }
 </script>
 
 <style scoped>
-    #components-layout-demo-side .logo {
-        height: 32px;
-        background: rgba(255, 255, 255, .2);
-        margin: 16px;
-    }
+
 
     .me {
         width: 70px;
@@ -326,7 +470,18 @@
         width: 16rem;
         border-radius: 3%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 1rem;
+        padding: 0.89rem;
+    }
+
+    .events {
+        width: 11rem;
+        height: 5rem;
+        margin-top: 0.5rem;
+        border-radius: 0;
+        background-color: #0064ff;
+        border: 0;
+        color: white;
+
     }
 
 

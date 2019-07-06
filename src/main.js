@@ -22,7 +22,7 @@ import {
   Avatar,
   Checkbox,
   Badge,
-
+  Modal,
   Button,
 
   Card,
@@ -70,6 +70,7 @@ Vue.use(Checkbox);
 Vue.use(ReactiveSearch)
 Vue.use(Drawer)
 Vue.use(AutoComplete)
+Vue.use(Modal)
 
 import vueCountryRegionSelect from 'vue-country-region-select'
 Vue.use(vueCountryRegionSelect)

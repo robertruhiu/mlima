@@ -3,7 +3,7 @@
         <pageheader></pageheader>
         <a-layout-content :style="{ padding: '0 0px', marginTop: '1rem' }">
             <div style="margin-top: 3rem">
-                <a-row style="background-color:#1976D2;margin-bottom: 1rem ">
+                <a-row style="background-color:#004ec7;margin-bottom: 1rem ">
                     <a-col span="4">
                         <h3 style="color: white;font-size: 2rem;padding-left: 4rem;padding-top: 1.5rem;">Talent</h3>
                     </a-col>
@@ -187,6 +187,7 @@
 
 </template>
 <script>
+
     class Developer {
         constructor(id, name, skills, about, location, availabilty) {
             this.id = id;
